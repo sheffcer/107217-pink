@@ -6,16 +6,16 @@
 </head>
 <body>
 <header class="page-header">
-  <div class="logo">
+  <div class="logo  logo--header">
     <img src="http://placehold.it/78x26" alt="logo">
   </div>
   <nav class="main-nav">
     <div class="main-nav__inner">
       <ul class="main-nav__list">
-        <li class="main-nav__item"><a href="index.html">Главная</a></li>
-        <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
-        <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-        <li class="main-nav__item"><a href="https://htmlacademy.ru/">Html Academy></a></li>
+        <li class="main-nav__item"><a href="index.html"><span class="main-nav__item-text">Главная</span></a></li>
+        <li class="main-nav__item"><a href="photo.html"><span class="main-nav__item-text">Фотографии</span></a></li>
+        <li class="main-nav__item"><a href="form.html"><span class="main-nav__item-text">Конкурс</span></a></li>
+        <li class="main-nav__item"><a href="https://htmlacademy.ru/"><span class="main-nav__item-text">Html Academy</span></a></li>
       </ul>
       <button class="main-nav__close" type="button">close</button>
       <button class="main-nav__toggle" type="button">open</button>
@@ -115,10 +115,13 @@
         </div>
       </div>
     </div>
+    <div class="field-actions">
     <input class="btn  btn--form" type="submit" value="Отправить форму">
+    </div>
     <label class="field-text">
-      <span>* — обязательные поля</span>
-      <!--<input class="field-text__input" type="text" id="" name="" placeholder="">-->
+      <div class="field-text__input-wrap">
+        <div class="field-text__help-text">* — обязательные поля</div>
+      </div>
      </label>
   </form>
 
@@ -128,13 +131,16 @@
     <div class="logo  logo--footer">
       <img src="http://placehold.it/78x26" alt="logo">
     </div>
-    <div class="social-links">
-      <a href="#" class="social-link  social-link--twitter">twitter</a>
-      <a href="#" class="social-link  social-link--facebook">facebook</a>
-      <a href="#" class="social-link  social-link--youtube">youtube</a>
+    <div class="page-footer__social">
+      <div class="social-links">
+        <a href="#" class="social-link  social-link--twitter">twitter</a>
+        <a href="#" class="social-link  social-link--facebook">facebook</a>
+        <a href="#" class="social-link  social-link--youtube">youtube</a>
+      </div>
     </div>
     <div class="page-footer__copyright">
-      <a href="" class="page-footer__link ">Разработано
+      Разработано
+      <a href="" class="page-footer__link ">
         <img src="/img/htmlacademy.svg" alt="HTMLAcademy" width="35" height="35">
       </a>
     </div>
