@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form</title>
+</head>
+<body>
+<header class="page-header">
+  <div class="logo  logo--header">
+    <img src="http://placehold.it/78x26" alt="logo">
+  </div>
+  <nav class="main-nav">
+    <div class="main-nav__inner">
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a href="index.html"><span class="main-nav__item-text">Главная</span></a></li>
+        <li class="main-nav__item"><a href="photo.html"><span class="main-nav__item-text">Фотографии</span></a></li>
+        <li class="main-nav__item"><a href="form.html"><span class="main-nav__item-text">Конкурс</span></a></li>
+        <li class="main-nav__item"><a href="https://htmlacademy.ru/"><span
+          class="main-nav__item-text">Html Academy</span></a></li>
+      </ul>
+      <button class="main-nav__close" type="button">close</button>
+      <button class="main-nav__toggle" type="button">open</button>
+    </div>
+  </nav>
+</header>
+<main>
+  <section class="intro  intro--photo">
+    <div class="intro__inner">
+      <h1 class="intro__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    </div>
+  </section>
+  <section class="promo-heading  promo-heading--main">
+    <div class="promo-heading__inner">
+      <h2 class="promo-heading__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
+        бонусную карту! Пожалуйста, заполните
+      </h2>
+    </div>
+  </section>
+  <form class="form-review" action="https://echo.htmlacademy.ru/" method="post">
+    <div class="form-review__inner">
+      <div class="fields-group  fields-group--review">
+        <label class="field-text  fields-group__item" for="surname">
+          <span>Фамилия:</span>
+          <input class="field-text__input" type="text" id="surname" name="surname" placeholder="Укжите фамилию*">
+        </label>
+        <label class="field-text  fields-group__item" for="name">
+          <span>ИМЯ:</span>
+          <input class="field-text__input" type="text" id="name" name="name" placeholder="Введите ваше имя*">
+        </label>
+        <label class="field-text  fields-group__item" for="second-name">
+          <span>Отчество:</span>
+          <input class="field-text__input" type="text" id="second-name" name="second-name"
+                 placeholder="Ну и отчество тоже">
+        </label>
+      </div>
+      <div class="field-checkbox  field-checkbox--custom">
+        <h2 class="field-checkbox__name  field-checkbox__name--title">Ваши безбашенные
+          достижения в путешествии</h2>
+        <div class="field-checkbox__input-wrap">
+          <label class="field-checkbox__name" for="selfie-shark">
+            <input class="field-checkbox__input" type="checkbox" name="selfie-shark" id="selfie-shark" checked>
+            <span class="field-checkbox__name-text">Сделал селфи с акулой</span>
+          </label>
+          <label class="field-checkbox__name" for="selfie-shark">
+            <input class="field-checkbox__input" type="checkbox" name="burned-beach" id="burned-beach" checked>
+            <span class="field-checkbox__name-text">Обгорел на пляже</span>
+          </label>
+          <label class="field-checkbox__name" for="saw-chuck">
+            <input class="field-checkbox__input" type="checkbox" name="saw-chuck" id="saw-chuck">
+            <span class="field-checkbox__name-text">Видел Чака Норриса</span>
+          </label>
+          <label class="field-checkbox__name" for="bought-souvenirs">
+            <input class="field-checkbox__input" type="checkbox" name="bought-souvenirs" id="bought-souvenirs">
+            <span class="field-checkbox__name-text">Накупил Сувениров</span>
+          </label>
+          <label class="field-checkbox__name" for="kept-tower">
+            <input class="field-checkbox__input" type="checkbox" name="kept-tower" id="kept-tower" checked>
+            <span class="field-checkbox__name-text">Удержал башню</span>
+          </label>
+          <label class="field-checkbox__name" for="defeated-hotel">
+            <input class="field-checkbox__input" type="checkbox" name="defeated-hotel" id="defeated-hotel">
+            <span class="field-checkbox__name-text">Разгромил отель</span>
+          </label>
+        </div>
+      </div>
+      <div class="fields-group  fields-group--contacts">
+        <label class="field-text fields-group__item" for="phone">
+          <span>Номер, пожалуйста</span>
+          <input class="field-text__input" type="text" id="phone" name="phone" placeholder="Введите телефон">
+        </label>
+        <label class="field-text fields-group__item" for="mail">
+          <span>Адрес почты</span>
+          <input class="field-text__input" type="text" id="mail" name="mail" placeholder="Введите почту*">
+        </label>
+      </div>
+      <div class="field-radio  field-radio--custom">
+        <h2 class="field-radio__name">С каким приложением путешествовали?</h2>
+        <div class="field-radio__input-wrap">
+          <label class="field-radio__name" for="ios">
+            <input class="field-radio__input" type="radio" name="radio" id="ios" checked>
+            <span class="field-radio__name-text">Pink для iOS</span>
+          </label>
+          <label class="field-radio__name" for="android">
+            <input class="field-radio__input" type="radio" name="radio" id="android">
+            <span class="field-radio__name-text">Pink на Android</span>
+          </label>
+          <label class="field-radio__name" for="windows">
+            <input class="field-radio__input" type="radio" name="radio" id="windows" checked>
+            <span class="field-radio__name-text">Windows Phone</span>
+          </label>
+        </div>
+      </div>
+      <div class="field-aria">
+        <div class="field-aria__input-wrap">
+          <h2 class="field-aria__name">Опишите свои эмоции</h2>
+          <textarea class="field-aria__input"
+                    placeholder="textarea">Можно прям в красках, не стесняясь в выражениях</textarea>
+        </div>
+      </div>
+    </div>
+    <div class="field-actions">
+      <input class="btn  btn--form" type="submit" value="Отправить форму">
+    </div>
+    <label class="field-text">
+      <div class="field-text__input-wrap">
+        <div class="field-text__help-text">* — обязательные поля</div>
+      </div>
+    </label>
+  </form>
+
+</main>
+<footer class="page-footer">
+  <div class="page-footer__inner">
+    <div class="logo  logo--footer">
+      <img src="http://placehold.it/78x26" alt="logo">
+    </div>
+    <div class="page-footer__social">
+      <div class="social-links">
+        <a href="#" class="social-link  social-link--twitter">twitter</a>
+        <a href="#" class="social-link  social-link--facebook">facebook</a>
+        <a href="#" class="social-link  social-link--youtube">youtube</a>
+      </div>
+    </div>
+    <div class="page-footer__copyright">
+      Разработано
+      <a href="" class="page-footer__link ">
+        <img src="/img/htmlacademy.svg" alt="HTMLAcademy" width="35" height="35">
+      </a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
