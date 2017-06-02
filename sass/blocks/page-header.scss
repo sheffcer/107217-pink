@@ -1,0 +1,40 @@
+.page-header {
+  //min-height: 67px;
+}
+
+.page-header__inner {
+  @include container();
+  //  width: 280px;
+  //padding: 0 20px;
+  //margin-left: 20px;
+    outline: 2px dashed indianred;
+  //padding-bottom: 20px;
+}
+
+
+@media (min-width: $tablet-widths) {
+  .page-header {
+    //@include container();
+  }
+
+  .page-header__inner {
+    width: 620px;
+  }
+}
+
+
+@media (min-width: $desktop-widths) {
+  .page-header {
+    min-height: 108px;
+    //@include container();
+  }
+
+  .page-header__inner {
+    width: 940px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 40px;
+  }
+}

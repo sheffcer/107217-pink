@@ -1,0 +1,12 @@
+.logo {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+
+@media (min-width: $tablet-widths) {
+  .logo {
+    padding-top: 45px;
+    padding-left: 70px;
+  }
+}

@@ -1,6 +1,22 @@
 body {
+  padding: 0;
+  margin: 0;
   min-width: 320px;
-  font-family: 'Open Sans', "Arial", sans-serif;
+  font-family: $font-family;
   background: url("/_design/preview/pink-index-mobile.jpg") no-repeat center top;
   min-height: 3429px;
+}
+
+@media (min-width: $tablet-widths) {
+  body {
+    background: url("/_design/preview/pink-index-tablet.jpg") no-repeat center top;
+    min-height: 3678px;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  body {
+    background: url("/_design/preview/pink-index-desktop.jpg") no-repeat center top;
+    min-height: 5218px;
+  }
 }
