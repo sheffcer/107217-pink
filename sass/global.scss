@@ -7,6 +7,11 @@ body {
   min-height: 3429px;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 @media (min-width: $tablet-widths) {
   body {
     background: url("/_design/preview/pink-index-tablet.jpg") no-repeat center top;

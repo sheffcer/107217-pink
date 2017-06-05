@@ -1,6 +1,7 @@
 .main-nav {
-   margin-top: 20px;
-  outline: 2px dashed green;
+  //width: 660px;
+  margin-top: 20px;
+  outline: 2px dashed orangered;
  }
 
 .main-nav__inner {
@@ -54,11 +55,12 @@
 
   .main-nav__close {
     top: -62px;
-    left: 593px;
+    left: 615px;
   }
 
   .main-nav__item-link {
-    padding: 17px 235px;
+
+    padding: 17px 258px;
   }
 }
 
