@@ -1,0 +1,39 @@
+.location {
+  padding-top: 65px;
+}
+
+.location__inner {
+  @include container();
+}
+
+.location__title {
+  text-align: center;
+  font-family: $font-family-light;
+  font-size: 24px;
+  font-weight: normal;
+  color: #283645;
+}
+
+.location__item {
+  text-align: center;
+}
+
+.location__item-name {
+  font-family: $font-family-bold;
+  font-size: 18px;
+  color: #283645;
+}
+
+.location__item-link {
+  font-family: $font-family-light;
+  font-size: 24px;
+  text-decoration: none;
+  color: #d22856;
+}
+
+.location__map {
+  @include container();
+  width: 320px;
+  height: 200px;
+  overflow: hidden;
+}

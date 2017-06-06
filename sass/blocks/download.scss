@@ -1,0 +1,67 @@
+.download {
+  @include container();
+}
+
+
+.download__inner {
+  padding: 0 20px;
+  padding-bottom: 20px;
+}
+
+
+.download__text {
+  padding-top: 10px;
+  text-align: center;
+  font-family: $font-family-light;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  color: $link-color;
+}
+
+.download__app {
+  //width: 208px;
+  margin-top: 30px;
+  padding: 0 36px;
+ }
+
+.download__app-item {
+  vertical-align: top;
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 0;
+  position: relative;
+  outline: 1px dotted red;
+  width: 55px;
+  height: 55px;
+
+  &::before {
+    content: "";
+    position: absolute;
+  }
+
+  &--ios {
+    width: 55px;
+    height: 55px;
+    background: url("../img/logo-apple.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--android {
+    width: 46px;
+    height: 54px;
+    top: 10px;
+    left: 4px;
+    background: url("../img/logo-android.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--microsoft {
+    width: 45px;
+    height: 43px;
+    top: 11px;
+    left: 10px;
+    background: url("../img/logo-microsoft.svg");
+    background-repeat: no-repeat;
+  }
+}

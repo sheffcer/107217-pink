@@ -1,0 +1,41 @@
+.features {
+  margin-top: 105px;
+}
+
+.features__inner {
+  @include  container();
+}
+
+.features__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.features__item {
+  outline: 2px dashed greenyellow;
+  margin-bottom: 30px;
+}
+
+.features__name {
+  text-align: center;
+  font-family: $font-family-bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.features__text {
+  text-align: center;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 24px;
+  color: $promo-heading-color;
+}
+
+.features__img {
+  width: 157px;
+  display: block;
+  margin-top: 55px;
+  margin: 0 auto;
+}

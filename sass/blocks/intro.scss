@@ -1,0 +1,15 @@
+.intro {
+
+}
+
+.intro__inner {
+  @include container();
+
+  & img {
+    margin-top: 105px;
+  }
+}
+
+.intro__title {
+  font-size: 0;
+}
