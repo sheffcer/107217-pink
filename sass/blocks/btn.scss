@@ -17,3 +17,9 @@
     //width: 280px;
     }
  }
+
+@media (min-width: $tablet-widths) {
+  .btn--download {
+    width: 300px;
+  }
+}

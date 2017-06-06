@@ -13,3 +13,29 @@
 .intro__title {
   font-size: 0;
 }
+
+@media (min-width: $tablet-widths) {
+  .intro__inner {
+    //padding-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+
+    & img {
+      order:2;
+    }
+  }
+
+  .intro__title {
+    order: 1;
+    min-height: 147px;
+    outline: 2px dashed deeppink;
+    margin-top: 80px;
+    margin-left: 75px;
+    margin-right: 70px;
+    text-align: center;
+    font-size: 40px;
+    font-family: $font-family-light;
+    font-weight: normal;
+    color: $link-color;
+  }
+}

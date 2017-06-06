@@ -42,3 +42,39 @@
   color: $promo-heading-color;
 }
 
+@media (min-width: $tablet-widths) {
+  .reviews__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews__text {
+    order: 1;
+    font-size: 18px;
+    color: $promo-heading-color;
+    margin-bottom: 0;
+  }
+
+  .reviews__text br {
+    display: none;
+  }
+
+  .reviews__auhor‐name {
+    order: 2;
+    margin-top: 5px;
+    font-size: 20px;
+  }
+
+  .reviews__auhor‐about {
+    order: 3;
+    margin-top: -15px;
+    margin-bottom: 40px;
+    font-family: $font-family;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    display: block;
+    color: $promo-heading-color;
+  }
+}
+

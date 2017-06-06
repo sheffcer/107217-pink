@@ -12,3 +12,14 @@
   font-weight: normal;
   color: $promo-heading-color;
 }
+
+@media (min-width: $tablet-widths) {
+  .promo-heading__text {
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: -40px;
+    width: 620px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+}

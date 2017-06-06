@@ -39,3 +39,28 @@
   margin-top: 55px;
   margin: 0 auto;
 }
+
+@media (min-width: $tablet-widths) {
+  .features__inner {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .features__img {
+    order: 1;
+  }
+
+  .features__list {
+    order: 2;
+    margin-top: 50px;
+    width: 320px;
+  }
+
+  .features__name {
+    text-align: left;
+  }
+
+  .features__text {
+    text-align: left;
+  }
+}

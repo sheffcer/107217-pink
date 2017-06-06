@@ -1,0 +1,48 @@
+.effect {
+  display: none;
+}
+
+.effect__inner {
+  @include container();
+}
+
+@media (min-width: $tablet-widths) {
+  .effect {
+    display: block;
+    margin-top: 45px;
+    margin-bottom: 95px;
+  }
+
+  .effect__inner {
+    display: flex;
+  }
+
+  .effect__inner img {
+    padding-left: 20px;
+    margin-right: 70px;
+  }
+
+  .effect__title {
+    padding-top: 10px;
+    font-family:  $font-family-bold;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+  }
+
+  .effect__text {
+    display: block;
+    margin-top: -10px;
+    font-family:  $font-family;
+    font-size: 14px;
+    line-height: 24px;
+    color: $promo-heading-color;
+  }
+
+  .effect__link {
+    font-family:  $font-family;
+    font-size: 14px;
+    line-height: 24px;
+    color: #d22856;
+  }
+}
