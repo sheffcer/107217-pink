@@ -5,7 +5,8 @@ body {
   font-family: $font-family;
   //background: url("/_design/preview/pink-index-mobile.jpg") no-repeat center top;
   background: url("/_design/preview/pink-photo-mobile.jpg") no-repeat center top;
-  min-height: 3429px;
+  //min-height: 3429px;
+  min-height: 4193px;
 }
 
 img {
@@ -16,6 +17,7 @@ img {
 @media (min-width: $tablet-widths) {
   body {
     //background: url("/_design/preview/pink-index-tablet.jpg") no-repeat center top;
+    background: url("/_design/preview/pink-photo-tablet.jpg") no-repeat center top;
     //min-height: 3678px;
   }
 }
@@ -23,6 +25,7 @@ img {
 @media (min-width: $desktop-widths) {
   body {
     //background: url("/_design/preview/pink-index-desktop.jpg") no-repeat center top;
+    background: url("/_design/preview/pink-photo-desktop.jpg") no-repeat center top;
     //min-height: 4218px;
   }
 }

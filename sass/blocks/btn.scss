@@ -19,6 +19,18 @@
     margin-bottom: 30px;
     //width: 280px;
     }
+
+  &--photo {
+    width: 280px;
+    margin: 0 auto;
+    color: #d22856;
+    border: 3px solid #d22856;
+  }
+
+  &--reset {
+    color: $gray-light;
+    border: 3px solid $gray-light;
+  }
  }
 
 @media (min-width: $tablet-widths) {

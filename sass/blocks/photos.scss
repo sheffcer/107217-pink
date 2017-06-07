@@ -8,16 +8,26 @@
 
 .photos__item {
   padding: 0 20px;
-  margin-bottom: 22px;
+  margin-bottom: 35px;
+  outline: 2px dashed brown;
 
   &--wide {
     padding: 0;
   }
 }
 
+.photos__item-content {
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 17px;
+  margin-top: -5px;
+  outline: 2px dashed #d22856;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
 .photos__author-stat {
   display: block;
-  margin-top: 15px;
+  margin-top: 12px;
 }
 
 .photos__author {
@@ -29,5 +39,54 @@
 
   &--wide {
     margin-left: 37px;
+  }
+}
+
+.photos__time-stamp {
+  font-family: $font-family-light;
+  font-size: 12px;
+  line-height: 24px;
+  color: $promo-heading-color;
+  text-transform: uppercase;
+}
+
+.photos__text {
+  margin-top: 0;
+  margin-left: 17px;
+  text-align: left;
+  font-family: $font-family;
+  font-size: 14px;
+  line-height: 24px;
+  color: $promo-heading-color;
+
+  &--wide {
+    margin-left: 38px;
+  }
+}
+
+.photos__like-stat {
+  position: relative;
+  margin-left: 50px;
+  font-family: $font-family;
+  font-size: 12px;
+  line-height: 24px;
+  color: #d22856;
+  text-transform: uppercase;
+
+  &::before {
+    top: 0;
+    left: -35px;
+    position: absolute;
+    content: "";
+    width: 17px;
+    height: 17px;
+    outline: 1px dotted orangered;
+    background-image: url("/img/icon-heart.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &--wide {
+    margin-left: 70px;
   }
 }

@@ -1,0 +1,15 @@
+.upload {
+  margin-top: 50px;
+  margin-bottom: 55px;
+}
+
+.upload__inner {
+  @include container();
+}
+
+.upload__preview {
+  display: block;
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 280px;
+}
