@@ -1,0 +1,37 @@
+.page-footer {
+  &--none{
+    display: none;
+  }
+}
+
+.page-footer__inner {
+  @include  container();
+}
+
+@media (min-width: $tablet-widths) {
+  .page-footer {
+    margin-top: 35px;
+
+    &--show{
+      display: block;
+    }
+  }
+
+  .page-footer__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+
+  .page-footer__copyright {
+    flex-basis: 150px;
+  }
+
+  .page-footer__social {
+    min-width: 200px;
+    //display: inline-flex;
+    outline: 1px dotted red;
+  }
+
+}

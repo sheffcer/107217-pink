@@ -75,3 +75,17 @@
   background-repeat: no-repeat;
   background-size: cover ;
 }
+
+@media (min-width: $tablet-widths) {
+  .pagination {
+    &--rate {
+      display: none;
+    }
+  }
+
+  .rates__table {
+    padding: 0 20px;
+    margin: -15px;
+    min-height:  218px;
+  }
+}
