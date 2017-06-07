@@ -15,13 +15,13 @@ img {
 @media (min-width: $tablet-widths) {
   body {
     background: url("/_design/preview/pink-index-tablet.jpg") no-repeat center top;
-    min-height: 3678px;
+    //min-height: 3678px;
   }
 }
 
 @media (min-width: $desktop-widths) {
   body {
     background: url("/_design/preview/pink-index-desktop.jpg") no-repeat center top;
-    min-height: 5218px;
+    //min-height: 4218px;
   }
 }

@@ -1,10 +1,11 @@
 .download {
-  @include container();
+  //@include container();
 }
 
 
 .download__inner {
-  padding: 0 20px;
+  @include container();
+  //padding: 0 20px;
   padding-bottom: 20px;
 }
 
@@ -21,6 +22,7 @@
 
 .download__app {
   //width: 208px;
+  margin-left: 20px;
   margin-top: 30px;
   padding: 0 36px;
  }
@@ -43,7 +45,7 @@
   &--ios {
     width: 55px;
     height: 55px;
-    background: url("../img/logo-apple.svg");
+    background: url("/img/logo-apple.svg");
     background-repeat: no-repeat;
   }
 
@@ -52,7 +54,7 @@
     height: 54px;
     top: 10px;
     left: 4px;
-    background: url("../img/logo-android.svg");
+    background: url("/img/logo-android.svg");
     background-repeat: no-repeat;
   }
 
@@ -61,7 +63,7 @@
     height: 43px;
     top: 11px;
     left: 10px;
-    background: url("../img/logo-microsoft.svg");
+    background: url("/img/logo-microsoft.svg");
     background-repeat: no-repeat;
   }
 }
@@ -77,14 +79,36 @@
 
   .download__app {
     display: block;
-    margin-left: 10px;
+    margin-left: 25px;
     margin-top: 45px;
     margin-bottom: 25px;
   }
 
   .download__text {
+    margin-left: 15px;
     width: 300px;
     font-family: $font-family-light;
     font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .download {
+    margin: 0;
+    margin-left: 10px;
+    margin-top: -70px;
+  }
+
+  .download__inner {
+    //@include  container();
+  }
+
+  .download__app {
+    margin-left: 15px;
+    margin-top: 60px;
+  }
+
+  .download__text {
+    padding-top: 30px;
   }
 }

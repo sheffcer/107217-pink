@@ -1,4 +1,5 @@
 .btn {
+  width: 280px;
   display: block;
   text-align: center;
   cursor: pointer;
@@ -12,6 +13,8 @@
   border-radius: 50px;
 
   &--download {
+    margin-left: 20px;
+    margin-right: 20px;
     margin-top: 20px;
     margin-bottom: 30px;
     //width: 280px;
@@ -20,6 +23,6 @@
 
 @media (min-width: $tablet-widths) {
   .btn--download {
-    width: 300px;
+    //width: 300px;
   }
 }

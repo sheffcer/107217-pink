@@ -36,7 +36,7 @@
     width: 6px;
     height: 6px;
     border-radius: 50px;
-    border: 3px solid #283645;
+    border: 3px solid $promo-heading-color;
     background-color: $link-color;
    }
 
@@ -48,5 +48,21 @@
   //padding: 0 125px;
   outline: 2px dashed darkblue;
 
+}
+
+@media (min-width: $tablet-widths) {
+  .pagination {
+    &--tablet {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .pagination {
+    &--desktop {
+      display: none;
+    }
+  }
 }
 

@@ -16,7 +16,6 @@
 
 @media (min-width: $tablet-widths) {
   .intro__inner {
-    //padding-bottom: 100px;
     display: flex;
     flex-direction: row;
 
@@ -27,7 +26,7 @@
 
   .intro__title {
     order: 1;
-    min-height: 147px;
+    //min-height: 147px;
     outline: 2px dashed deeppink;
     margin-top: 80px;
     margin-left: 75px;
@@ -37,5 +36,19 @@
     font-family: $font-family-light;
     font-weight: normal;
     color: $link-color;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .intro__inner {
+    //padding: 0;
+  }
+
+  .intro__title {
+    margin: 0;
+    margin-top: 100px;
+    margin-left: 40px;
+    font-size: 50px;
+    margin-right: 250px;
   }
 }

@@ -77,15 +77,21 @@
 }
 
 @media (min-width: $tablet-widths) {
-  .pagination {
-    &--rate {
-      display: none;
-    }
-  }
 
   .rates__table {
     padding: 0 20px;
     margin: -15px;
     min-height:  218px;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .rates__table {
+    min-height: 279px;
+  }
+
+  .rates__inner {
+    padding-top: 145px;
+    padding-bottom: 110px;
   }
 }
