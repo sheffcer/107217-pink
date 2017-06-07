@@ -1,9 +1,16 @@
 .intro {
+  //background-image: url("/img/bg-back-mobile@1x.jpg");
 
+  &--photo {
+    min-height: 170px;
+  }
 }
 
 .intro__inner {
   @include container();
+  background-image: url("/img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
 
   & img {
     margin-top: 105px;
@@ -12,6 +19,16 @@
 
 .intro__title {
   font-size: 0;
+
+  &--photo {
+    padding: 0 54px;
+    text-align: center;
+    font-family: $font-family-light;
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    color: $link-color;
+  }
 }
 
 @media (min-width: $tablet-widths) {
