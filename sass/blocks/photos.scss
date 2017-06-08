@@ -90,3 +90,9 @@
     margin-left: 70px;
   }
 }
+
+@media (min-width: $tablet-widths) {
+  .photos {
+    margin-top: 118px;
+  }
+}
