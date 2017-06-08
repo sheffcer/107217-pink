@@ -4,5 +4,56 @@
   margin-top: 40px;
   outline: 2px dashed brown;
   border: none;
-  padding-bottom: 90px;
+  padding-bottom: 110px;
+}
+
+.filter__type {
+  width: 200px;
+  margin: auto;
+  display: flex;
+ }
+
+.filter__type-item {
+  position: relative;
+  flex-basis: 33.33%;
+  margin-right: 40px;
+  border: none;
+  //outline:  2px dashed olivedrab;
+  background-color: transparent;
+  font-size: 0;
+
+  &:before {
+    position: absolute;
+    content: "";
+    width: 48px;
+    height: 48px;
+    outline:  2px dashed olivedrab;
+    top:0;
+    left: 0;
+  }
+
+  &--crop::before {
+    top: -9px;
+    left: -6px;
+    background-image: url("/img/icon-editor-crop.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--fill::before {
+    top: -8px;
+    left: -5px;
+    background-image: url("/img/icon-editor-fill.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--contrast::before {
+    left: 2px;
+    top: -2px;
+    background-image: url("/img/icon-editor-contrast.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.filter__type-item:last-child {
+  margin-right: 0;
 }
