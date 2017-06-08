@@ -29,6 +29,13 @@
 }
 
 @media (min-width: $tablet-widths) {
+  .promo-heading {
+    &--photo {
+      display: block;
+       margin-top: 80px;
+    }
+  }
+
   .promo-heading__text {
     margin: 0 auto;
     margin-top: 30px;
@@ -36,6 +43,18 @@
     min-width: 620px;
     font-size: 40px;
     line-height: 40px;
+
+    &--photo {
+      outline: 1px dotted orange;
+      //width: 350px;
+      //margin: 0 auto;
+      //display: block;
+      margin-top: 40px;
+      font-family: $font-family;
+      font-size: 18px;
+      line-height: 30px;
+      color: $promo-heading-color;
+    }
   }
 }
 

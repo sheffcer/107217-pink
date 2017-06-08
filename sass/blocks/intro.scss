@@ -32,6 +32,13 @@
 }
 
 @media (min-width: $tablet-widths) {
+  .intro {
+    &--photo {
+      min-height: 229px;
+      margin-bottom: 185px;
+    }
+  }
+
   .intro__inner {
     display: flex;
     flex-direction: row;
@@ -53,6 +60,12 @@
     font-family: $font-family-light;
     font-weight: normal;
     color: $link-color;
+
+    &--photo {
+      margin-top: 60px;
+      font-size: 50px;
+      line-height: 60px;
+    }
   }
 }
 
