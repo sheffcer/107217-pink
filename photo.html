@@ -41,7 +41,7 @@
     <section class="photos">
         <div class="photos__inner">
             <div class="photos__item  photos__item--wide">
-                <a href="#" class="photos__link">
+                <a href="#" class="photos__link  photos__link--wide">
                     <img src="/img/panorama-mobile@1x.jpg" alt="" height="137">
                 </a>
                 <!--<div class="photos__item-content">-->
@@ -147,7 +147,7 @@
     </section>
     <section class="promo-heading">
         <div class="promo-heading__inner">
-            <h2 class="promo-heading__text  promo-heading__text--upload">Затмите их всех! <br>Выкладывайте все, что накопилось в <br>телефоне!
+            <h2 class="promo-heading__text  promo-heading__text--photo  promo-heading__text--upload">Затмите их всех! <br>Выкладывайте все, что накопилось в <br>телефоне!
             </h2>
         </div>
     </section>
@@ -156,25 +156,41 @@
             <div class="upload__preview">
                 <img src="img/photo-7-mobile@1x.jpg">
             </div>
+          <div class="upload__content">
             <fieldset class="filter">
-                <div class="filter__type">
-                    <button class="filter__type-item  filter__type-item--crop">crop</button>
-                    <button class="filter__type-item  filter__type-item--fill">fill</button>
-                    <button class="filter__type-item  filter__type-item--contrast">contrast</button>
+              <div class="filter__type">
+                <button class="filter__type-item  filter__type-item--crop">crop</button>
+                <button class="filter__type-item  filter__type-item--fill">fill</button>
+                <button class="filter__type-item  filter__type-item--contrast">contrast</button>
+              </div>
+              <div class="upload__filters">
+                <div class="filter__level">
+                  <div class="filter__level-line">
+                    <div class="filter__level-pin"></div>
+                    <div class="filter__level-val"></div>
+                  </div>
                 </div>
                 <div class="filter__level">
-                    <div class="filter__level-line">
-                        <div class="filter__level-pin"></div>
-                        <div class="filter__level-val"></div>
-                    </div>
+                  <div class="filter__level-line">
+                    <div class="filter__level-pin"></div>
+                    <div class="filter__level-val"></div>
+                  </div>
                 </div>
+                <div class="filter__level">
+                  <div class="filter__level-line">
+                    <div class="filter__level-pin"></div>
+                    <div class="filter__level-val"></div>
+                  </div>
+                </div>
+              </div>
             </fieldset>
             <div class="field-actions  field-actions--photo">
-                <button class="btn btn--submit btn--photo" type="submit">Запостить</button>
+              <button class="btn btn--submit btn--photo" type="submit">Запостить</button>
             </div>
             <div class="field-actions">
-                <button class="btn  btn--reset btn--photo" type="reset">Отмена</button>
+              <button class="btn  btn--reset btn--photo" type="reset">Отмена</button>
             </div>
+          </div>
         </div>
     </form>
 </main>

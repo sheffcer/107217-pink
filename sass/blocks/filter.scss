@@ -4,7 +4,6 @@
   margin-top: 40px;
   outline: 2px dashed brown;
   border: none;
-  padding-bottom: 35px;
 }
 
 .filter__type {
@@ -91,5 +90,44 @@
     border-radius: 50px;
     border: 2px solid $red-danger;
     background-color: #f2f2f2;
+  }
+}
+
+@media (min-width: $tablet-widths) {
+  .filter {
+    padding: 0;
+    margin-top: 55px;
+    width: 300px;
+    height: 220px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .filter__type {
+    margin: 0;
+    width: 10px;
+    height: 10px;
+    flex-direction: column;
+  }
+
+  .filter__type-item {
+    margin: 0;
+    margin-bottom: 85px;
+  }
+
+  .filter__level {
+    margin: 0;
+    width: 200px;
+    min-height: 10px;
+    //outline: 1px dotted blue ;
+    margin-bottom: 62px;
+  }
+
+  .filter__level-line {
+    position: relative;
+
+    &::before {
+      width: 200px;
+     }
   }
 }

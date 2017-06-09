@@ -95,4 +95,68 @@
   .photos {
     margin-top: 118px;
   }
+
+  .photos__inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    //justify-content: space-around;
+  }
+
+  .photos__link {
+
+    &--wide img {
+      min-height: 509px;
+
+    }
+  }
+
+  .photos__link img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .photos__item:nth-child(n+2) {
+    box-sizing: border-box;
+    width: 300px;
+    height: 454px;
+    margin-bottom: 20px;
+   }
+
+  .photos__item:nth-child(even) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .photos__item {
+
+    &--wide {
+      min-height: 509px;
+      margin-bottom: 40px;
+
+    }
+  }
+
+  .photos__author-stat {
+    margin-top: 15px;
+    margin-left: -10px;
+   }
+
+
+  .photos__text {
+    min-height: 50px;
+    margin-left: 10px;
+  }
+
+  .photos__like-stat {
+    margin: 0;
+    margin-left: 8px;
+  }
+
+  .photos__like-stat {
+    &::before {
+      top: -5px;
+      left: 218px;
+    }
+  }
 }
