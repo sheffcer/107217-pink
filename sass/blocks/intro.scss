@@ -4,6 +4,10 @@
   &--photo {
     min-height: 170px;
   }
+
+  &--form {
+    min-height: 170px;
+  }
 }
 
 .intro__inner {
@@ -21,6 +25,16 @@
   font-size: 0;
 
   &--photo {
+     padding: 0 54px;
+     text-align: center;
+     font-family: $font-family-light;
+     font-size: 24px;
+     font-weight: normal;
+     font-style: normal;
+     color: $link-color;
+   }
+
+  &--form {
     padding: 0 54px;
     text-align: center;
     font-family: $font-family-light;

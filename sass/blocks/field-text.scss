@@ -1,0 +1,32 @@
+.field-text {
+  display: block;
+  margin-bottom: 16px;
+
+}
+
+.field-text__input {
+  width: 280px;
+  height: 60px;
+  margin: 0 20px;
+  line-height: 30px;
+  font-family: $font-family;
+  font-size: 18px;
+  color: $promo-heading-color;
+  border: 2px solid $gray-lighter;
+  background-color: transparent; //временно
+
+  //border-radius: @border-radius;
+
+  &:focus {
+    @include  focus();
+  }
+
+  &::placeholder {
+    font-family: $font-family;
+    color: $promo-heading-color;
+    font-size: 18px;
+    line-height: 30;
+    padding-left: 23px;
+    opacity: 1;
+  }
+}
