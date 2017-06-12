@@ -34,7 +34,18 @@
  }
 
 @media (min-width: $tablet-widths) {
+  .btn {
+    width: 260px;
+  }
   .btn--download {
     //width: 300px;
   }
+}
+
+@media (min-width: $desktop-widths) {
+  .btn {
+    width: 186px;
+
+  }
+;
 }

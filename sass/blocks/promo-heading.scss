@@ -60,10 +60,24 @@
 
 
 @media (min-width: $desktop-widths) {
+  .promo-heading {
+    &--photo {
+     margin-top: -40px;
+    }
+  }
+
   .promo-heading__text {
     margin-top: 65px;
     font-size: 50px;
     line-height: 55px;
+
+    &--photo {
+      width: 580px;
+      font-family: $font-family;
+      font-size: 18px;
+      line-height: 30px;
+      color: $promo-heading-color;
+    }
   }
 
   .promo-heading__text:last-child {

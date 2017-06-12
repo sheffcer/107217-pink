@@ -80,5 +80,13 @@
     margin-left: 40px;
     font-size: 50px;
     margin-right: 250px;
+
+    &--photo {
+      width: 350px;
+      margin: 0 auto;
+      margin-top: 60px;
+      font-size: 50px;
+      line-height: 60px;
+    }
   }
 }

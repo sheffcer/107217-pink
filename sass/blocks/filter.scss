@@ -96,7 +96,7 @@
 @media (min-width: $tablet-widths) {
   .filter {
     padding: 0;
-    margin-top: 55px;
+    margin-top: 35px;
     width: 300px;
     height: 220px;
     display: flex;
@@ -113,13 +113,37 @@
   .filter__type-item {
     margin: 0;
     margin-bottom: 85px;
+
+
+    &--crop::before {
+      top: 28px;
+      left: 7px;
+      width: 24px;
+      height: 24px;
+      background-size: contain;
+    }
+
+    &--fill::before {
+      top: 16px;
+      left: 8px;
+      width: 24px;
+      height: 24px;
+      background-size: contain;
+    }
+
+    &--contrast::before {
+      left: 12px;
+      top: 1px;
+      width: 17px;
+      height: 18px;
+      background-size: contain;
+     }
   }
 
   .filter__level {
     margin: 0;
     width: 200px;
     min-height: 10px;
-    //outline: 1px dotted blue ;
     margin-bottom: 62px;
   }
 
@@ -129,5 +153,93 @@
     &::before {
       width: 200px;
      }
+  }
+
+  .filter__level:nth-child(1) .filter__level-pin {
+
+    &::before {
+      left: 145px;
+    }
+  }
+
+  .filter__level:nth-child(2) .filter__level-pin {
+
+    &::before {
+      left: 25px;
+    }
+  }
+  .filter__level:nth-child(3) .filter__level-pin {
+
+    &::before {
+      left: 96px;
+    }
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .filter {
+    margin: 0;
+    margin-top: 35px;
+    width: 410px;
+    margin-bottom: 140px;
+  }
+
+  .filter__type {
+    margin-left: -60px;
+
+  }
+
+  .filter__level-line {
+    margin-left: -27px;
+    &::before {
+      width: 289px;
+    }
+  }
+
+  .filter__type-item {
+
+    &--crop::before {
+      top: 15px;
+      left: -3px;
+      width: 48px;
+      height: 48px;
+      background-size: contain;
+    }
+
+    &--fill::before {
+      top: 3px;
+      left: 0;
+      width: 48px;
+      height: 48px;
+      background-size: contain;
+    }
+
+    &--contrast::before {
+      left: 4px;
+      top: -9px;
+      width: 34px;
+      height: 34px;
+      background-size: contain;
+    }
+  }
+
+  .filter__level:nth-child(1) .filter__level-pin {
+
+    &::before {
+      left: 70px;
+    }
+  }
+
+  .filter__level:nth-child(2) .filter__level-pin {
+
+    &::before {
+      left: 245px;
+    }
+  }
+  .filter__level:nth-child(3) .filter__level-pin {
+
+    &::before {
+      left: 158px;
+    }
   }
 }
