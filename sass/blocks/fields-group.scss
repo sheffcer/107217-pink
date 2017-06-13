@@ -24,3 +24,23 @@
   color: $red-danger;
 
 }
+
+@media (min-width: $tablet-widths) {
+
+  .fields-group__item span {
+    margin-left: 20px;
+    margin-top: 15px;
+
+  }
+
+  .fields-group {
+    &--review {
+      order: 0;
+    }
+
+    &--contacts {
+      order: 4;
+    }
+  }
+
+}

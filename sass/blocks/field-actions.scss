@@ -16,6 +16,10 @@
 
 @media (min-width: $tablet-widths) {
   .field-actions {
+    &--form {
+      order: 7;
+    }
+
     &--photo {
       margin-left: -25px;
       //margin-top: 75px;

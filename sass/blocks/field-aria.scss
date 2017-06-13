@@ -35,3 +35,9 @@
   text-align: center;
 
 }
+
+@media (min-width: $tablet-widths) {
+  .field-aria {
+    order: 5;
+  }
+}

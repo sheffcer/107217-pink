@@ -68,3 +68,17 @@
     @include focus();
   }
 }
+
+@media (min-width: $tablet-widths) {
+  .field-radio {
+    &--custom {
+      order: 2;
+    }
+  }
+
+  .field-radio__input-wrap {
+    width: 620px;
+    margin: 0 auto;
+    margin-top: -100px;
+  }
+}

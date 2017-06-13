@@ -60,3 +60,12 @@
     @include focus();
   }
 }
+
+@media (min-width: $tablet-widths) {
+  .field-checkbox {
+
+    &--custom {
+      order: 3;
+    }
+  }
+}

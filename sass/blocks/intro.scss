@@ -12,7 +12,7 @@
 
 .intro__inner {
   @include container();
-  background-image: url("/img/bg-back-mobile@1x.jpg");
+  //background-image: url("/img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top center;
 
@@ -51,11 +51,16 @@
       min-height: 229px;
       margin-bottom: 185px;
     }
+
+    &--form {
+      min-height: 330px;
+    }
   }
 
   .intro__inner {
     display: flex;
     flex-direction: row;
+    padding-bottom: 82px;
 
     & img {
       order:2;
@@ -64,7 +69,6 @@
 
   .intro__title {
     order: 1;
-    //min-height: 147px;
     outline: 2px dashed deeppink;
     margin-top: 80px;
     margin-left: 75px;
@@ -74,6 +78,15 @@
     font-family: $font-family-light;
     font-weight: normal;
     color: $link-color;
+
+    &--form {
+      padding: 0;
+      padding-top: 60px;
+      width: 620px;
+      margin: 0 auto;
+      font-size: 50px;
+      line-height: 60px;
+    }
 
     &--photo {
       margin-top: 60px;

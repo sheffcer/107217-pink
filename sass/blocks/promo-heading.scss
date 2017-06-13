@@ -22,12 +22,17 @@
   }
 
   &--form {
+    margin-bottom: 42px;
     text-align: center;
     padding: 0 20px;
     font-family: $font-family;
     font-size: 14px;
     line-height: 30px;
     color: $promo-heading-color;
+  }
+
+  &--form span {
+    display: none;
   }
 
   &--upload {
@@ -43,6 +48,15 @@
       display: block;
        margin-top: 80px;
     }
+
+    &--form {
+      margin-top: 85px;
+      margin-bottom: 100px;
+    }
+
+    &--form span {
+      display: block;
+    }
   }
 
   .promo-heading__text {
@@ -55,10 +69,16 @@
 
     &--photo {
       outline: 1px dotted orange;
-      //width: 350px;
-      //margin: 0 auto;
-      //display: block;
       margin-top: 40px;
+      font-family: $font-family;
+      font-size: 18px;
+      line-height: 30px;
+      color: $promo-heading-color;
+    }
+
+    &--form {
+      outline: 1px dotted orange;
+      margin: 0;
       font-family: $font-family;
       font-size: 18px;
       line-height: 30px;

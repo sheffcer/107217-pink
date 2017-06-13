@@ -5,3 +5,16 @@
 .form-review__inner {
   @include container();
 }
+
+
+@media (min-width: $tablet-widths) {
+  .form-review {
+    margin-top: -27px;
+  }
+
+  .form-review__inner {
+    display: flex;
+    flex-direction: column;
+
+  }
+}
