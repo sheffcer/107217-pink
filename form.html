@@ -43,7 +43,7 @@
       <div class="fields-group  fields-group--review">
         <label class="field-text  fields-group__item" for="surname">
           <span>Фамилия:</span>
-          <input class="field-text__input" type="text" id="surname" name="surname" placeholder="Укжите фамилию*">
+          <input class="field-text__input" type="text" id="surname" name="surname" placeholder="Укажите фамилию*">
         </label>
         <label class="field-text  fields-group__item" for="name">
           <span>ИМЯ:</span>
@@ -56,14 +56,14 @@
         </label>
       </div>
       <div class="field-checkbox  field-checkbox--custom">
-        <h2 class="field-checkbox__name  field-checkbox__name--title">Ваши безбашенные
-          достижения в путешествии</h2>
         <div class="field-checkbox__input-wrap">
+        <h2 class="field-checkbox__name  field-checkbox__name--title">Ваши безбашенные <br>достижения в путешествии</h2>
+        <!--<div class="field-checkbox__input-wrap">-->
           <label class="field-checkbox__name" for="selfie-shark">
             <input class="field-checkbox__input" type="checkbox" name="selfie-shark" id="selfie-shark" checked>
             <span class="field-checkbox__name-text">Сделал селфи с акулой</span>
           </label>
-          <label class="field-checkbox__name" for="selfie-shark">
+          <label class="field-checkbox__name" for="burned-beach">
             <input class="field-checkbox__input" type="checkbox" name="burned-beach" id="burned-beach" checked>
             <span class="field-checkbox__name-text">Обгорел на пляже</span>
           </label>
@@ -96,8 +96,9 @@
         </label>
       </div>
       <div class="field-radio  field-radio--custom">
-        <h2 class="field-radio__name">С каким приложением путешествовали?</h2>
         <div class="field-radio__input-wrap">
+        <h2 class="field-radio__name  field-radio__name--title">С каким приложением <br>путешествовали?</h2>
+        <!--<div class="field-radio__input-wrap">-->
           <label class="field-radio__name" for="ios">
             <input class="field-radio__input" type="radio" name="radio" id="ios" checked>
             <span class="field-radio__name-text">Pink для iOS</span>
@@ -119,8 +120,8 @@
                     placeholder="textarea">Можно прям в красках, не стесняясь в выражениях</textarea>
         </div>
       </div>
-    </div>
-    <div class="field-actions">
+    <!--</div>-->
+    <div class="field-actions  field-actions--form">
       <input class="btn  btn--form" type="submit" value="Отправить форму">
     </div>
     <label class="field-text">
@@ -128,6 +129,7 @@
         <div class="field-text__help-text">* — обязательные поля</div>
       </div>
     </label>
+    </div>
   </form>
 
 </main>

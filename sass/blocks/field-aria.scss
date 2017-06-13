@@ -1,0 +1,37 @@
+.field-aria {
+  margin-top: 35px;
+}
+
+.field-aria__input-wrap {
+  outline: 2px dashed green;
+}
+
+.field-aria__name {
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  color: $red-danger;
+}
+
+
+.field-aria__input  {
+  width: 276px;
+  display: block;
+  margin: 0 auto;
+  min-height: 176px;
+  background-color: transparent;
+  border: 2px solid $gray-lighter;
+  outline: 0;
+
+  padding-top: 15px;
+  font-family: $font-family;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+  color: $promo-heading-color;
+  text-align: center;
+
+}

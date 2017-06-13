@@ -1,6 +1,16 @@
 .fields-group {
-  min-height: 370px;
+  //min-height: 370px;
   outline: 2px dashed yellow;
+
+  &--review {
+    min-height: 358px;
+    margin-bottom: 0;
+  }
+
+  &--contacts {
+    margin-top: 33px;
+    margin-bottom: 0;
+  }
 }
 
 .fields-group__item span {
