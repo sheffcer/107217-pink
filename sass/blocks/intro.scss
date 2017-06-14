@@ -98,7 +98,7 @@
 
 @media (min-width: $desktop-widths) {
   .intro__inner {
-    //padding: 0;
+    padding-bottom: 100px;
   }
 
   .intro__title {
@@ -107,6 +107,13 @@
     margin-left: 40px;
     font-size: 50px;
     margin-right: 250px;
+
+    &--form {
+      width: 820px;
+      padding: 0;
+      padding-top: 60px;
+      margin: 0 auto;
+    }
 
     &--photo {
       width: 350px;

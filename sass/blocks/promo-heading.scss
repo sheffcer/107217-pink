@@ -93,6 +93,11 @@
     &--photo {
      margin-top: -40px;
     }
+
+    &--form {
+      margin-top: 45px;
+      margin-bottom: 80px;
+    }
   }
 
   .promo-heading__text {
@@ -102,6 +107,15 @@
 
     &--photo {
       width: 580px;
+      font-family: $font-family;
+      font-size: 18px;
+      line-height: 30px;
+      color: $promo-heading-color;
+    }
+
+    &--form {
+      width: 780px;
+      margin: 0 auto;
       font-family: $font-family;
       font-size: 18px;
       line-height: 30px;
