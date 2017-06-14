@@ -48,9 +48,12 @@
 @media (min-width: $tablet-widths) {
   .btn {
     width: 260px;
-  }
-  .btn--download {
-    //width: 300px;
+
+    &--form {
+      margin: 0;
+      margin-left: 20px;
+      width: 300px;
+    }
   }
 }
 

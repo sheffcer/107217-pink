@@ -65,7 +65,40 @@
   .field-checkbox {
 
     &--custom {
-      order: 3;
+      order: 4;
+      width: 620px;
+      min-height: 550px;
+      margin: 0 auto;
+      border: 2px solid $gray-light;
+      margin-top: 60px;
     }
+  }
+
+  .field-checkbox__name {
+    padding-left: 120px;
+
+    &--title {
+      width: 375px;
+      margin: 0 auto;
+      margin-top: -10px;
+      margin-bottom: 50px;
+      padding: 0 30px;
+      background-color: $link-color;
+    }
+
+    &--title br {
+      display: none;
+    }
+  }
+
+  .field-checkbox__input {
+    & + .field-checkbox__name-text:before {
+      left: 56px;
+    }
+  }
+
+  .field-checkbox__input-wrap {
+    padding: 0;
+    outline: none;
   }
 }

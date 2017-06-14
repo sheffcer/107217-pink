@@ -1,5 +1,5 @@
 .field-aria {
-  margin-top: 35px;
+  margin-top: 85px;
 }
 
 .field-aria__input-wrap {
@@ -39,5 +39,33 @@
 @media (min-width: $tablet-widths) {
   .field-aria {
     order: 5;
+    width: 620px;
+    margin: 0 auto;
+    margin-top: 65px;
+    min-height: 290px;
+    border: 2px solid $gray-light;
   }
+
+  .field-aria__input-wrap {
+    position: relative;
+    text-align: center;
+    margin-top: -12px;
+    outline: none;
+  }
+
+  .field-aria__name {
+    position: relative;
+    display: inline;
+    margin-top: -10px;
+    margin-bottom: 38px;
+    padding: 0 30px;
+    background-color: $link-color;
+  }
+
+  .field-aria__input {
+    margin-top: 33px;
+    width: 500px;
+  }
+
+
 }

@@ -13,6 +13,10 @@
   }
 }
 
+.fields-group__name {
+  font-size: 0;
+}
+
 .fields-group__item span {
   margin-left: 42px;
   margin-bottom: 5px;
@@ -39,7 +43,30 @@
     }
 
     &--contacts {
-      order: 4;
+      order: 3;
+      width: 620px;
+      margin: 0 auto;
+      border: 2px solid $gray-light;
+      min-height: 309px;
+    }
+  }
+
+  .fields-group__name {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    color: $red-danger;
+
+    &--title {
+      width: 250px;
+      margin: 0 auto;
+      z-index: 100;
+      margin-bottom: 40px;
+      margin-top: -10px;
+      padding: 0 30px;
+      background-color: $link-color;
     }
   }
 
