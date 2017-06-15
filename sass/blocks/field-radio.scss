@@ -119,3 +119,32 @@
     }
   }
 }
+
+@media (min-width: $desktop-widths) {
+  .field-radio {
+    &--custom {
+      margin-top: -6px;
+      width: 434px;
+    }
+  }
+
+  .field-radio__name {
+    padding-left: 135px;
+    margin-bottom: 45px;
+
+    &--title {
+      margin-bottom: 50px;
+      padding: 0 30px;
+    }
+  }
+
+  .field-radio__input + .field-radio__name-text:before {
+    top: -3px;
+    left: 74px;
+  }
+
+  .field-radio__input:checked + .field-radio__name-text::after {
+    left: 85px;
+    top: 7px;
+  }
+}

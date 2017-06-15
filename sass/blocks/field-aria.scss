@@ -67,5 +67,18 @@
     width: 500px;
   }
 
+}
 
+@media (min-width: $desktop-widths) {
+  .field-aria {
+    width: 940px;
+    min-height: 210px;
+  }
+
+  .field-aria__input {
+    margin-top: 31px;
+    width: 814px;
+    min-height: 105px;
+
+  }
 }

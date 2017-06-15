@@ -18,3 +18,10 @@
 
   }
 }
+
+@media (min-width: $desktop-widths) {
+  .form-review__inner {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

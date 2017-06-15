@@ -87,3 +87,23 @@
     margin-bottom: 20px;
   }
 }
+
+@media (min-width: $desktop-widths) {
+
+  .field-text {
+    &--contacts {
+      margin: 0;
+      margin-top: -10px;
+      width: 375px;
+    }
+  }
+
+  .field-text--contacts .field-text__input {
+    width: 375px;
+  }
+
+  .field-text__help-text {
+    margin-top: 152px;
+    margin-left: -30px;
+  }
+}

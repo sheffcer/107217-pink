@@ -102,3 +102,50 @@
     outline: none;
   }
 }
+
+@media (min-width: $desktop-widths) {
+  .field-checkbox {
+
+    &--custom {
+      margin-top: 65px;
+      width: 940px;
+      min-height: 230px;
+    }
+  }
+
+  .field-checkbox__input-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .field-checkbox__name:nth-child(1) {
+    order: 1;
+  }
+
+  .field-checkbox__name:nth-child(2) {
+    order: 4;
+  }
+
+  .field-checkbox__name:nth-child(3) {
+    order: 2;
+  }
+
+  .field-checkbox__name:nth-child(4) {
+    order: 5;
+    padding-left: 155px;
+  }
+
+  .field-checkbox__name:nth-child(5) {
+    order: 3;
+  }
+
+  .field-checkbox__name:nth-child(6) {
+    order: 5;
+  }
+
+  .field-checkbox__name:nth-child(4) span::before {
+    left: 96px;
+  }
+}
