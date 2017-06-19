@@ -1,0 +1,84 @@
+.field-aria {
+  margin-top: 85px;
+}
+
+.field-aria__input-wrap {
+  outline: 2px dashed green;
+}
+
+.field-aria__name {
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  color: $red-danger;
+}
+
+
+.field-aria__input  {
+  width: 276px;
+  display: block;
+  margin: 0 auto;
+  min-height: 176px;
+  background-color: transparent;
+  border: 2px solid $gray-lighter;
+  outline: 0;
+
+  padding-top: 15px;
+  font-family: $font-family;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+  color: $promo-heading-color;
+  text-align: center;
+
+}
+
+@media (min-width: $tablet-widths) {
+  .field-aria {
+    order: 5;
+    width: 620px;
+    margin: 0 auto;
+    margin-top: 65px;
+    min-height: 290px;
+    border: 2px solid $gray-light;
+  }
+
+  .field-aria__input-wrap {
+    position: relative;
+    text-align: center;
+    margin-top: -12px;
+    outline: none;
+  }
+
+  .field-aria__name {
+    position: relative;
+    display: inline;
+    margin-top: -10px;
+    margin-bottom: 38px;
+    padding: 0 30px;
+    background-color: $link-color;
+  }
+
+  .field-aria__input {
+    margin-top: 33px;
+    width: 500px;
+  }
+
+}
+
+@media (min-width: $desktop-widths) {
+  .field-aria {
+    width: 940px;
+    min-height: 210px;
+  }
+
+  .field-aria__input {
+    margin-top: 31px;
+    width: 814px;
+    min-height: 105px;
+
+  }
+}

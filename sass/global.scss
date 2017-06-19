@@ -1,6 +1,40 @@
 body {
+  padding: 0;
+  margin: 0;
   min-width: 320px;
-  font-family: 'Open Sans', "Arial", sans-serif;
-  background: url("/_design/preview/pink-index-mobile.jpg") no-repeat center top;
-  min-height: 3429px;
+  font-family: $font-family;
+  //background: url("/_design/preview/pink-index-mobile.jpg") no-repeat center top;
+  //background: url("/_design/preview/pink-photo-mobile.jpg") no-repeat center top;
+  background: url("/_design/preview/pink-form-mobile.jpg") no-repeat center top;
+  //min-height: 3429px;
+  //min-height: 4193px;
+  min-height: 3014px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: $tablet-widths) {
+  body {
+    //background: url("/_design/preview/pink-index-tablet.jpg") no-repeat center top;
+    //background: url("/_design/preview/pink-photo-tablet.jpg") no-repeat center top;
+    background: url("/_design/preview/pink-form-tablet.jpg") no-repeat center top;
+    //min-height: 3678px;
+    //min-height: 3840px;
+    min-height: 3264px;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  body {
+    //background: url("/_design/preview/pink-index-desktop.jpg") no-repeat center top;
+    //background: url("/_design/preview/pink-photo-desktop.jpg") no-repeat center top;
+    background: url("/_design/preview/pink-form-desktop.jpg") no-repeat center top;
+    //min-height: 4218px;
+    //min-height: 3374px;
+    //min-height: 3264px;
+    min-height: 2056px;
+  }
 }

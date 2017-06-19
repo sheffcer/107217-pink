@@ -1,0 +1,96 @@
+.main-nav {
+  //width: 660px;
+  margin-top: 20px;
+  outline: 2px dashed orangered;
+ }
+
+.main-nav__inner {
+  position: relative;
+}
+
+.main-nav__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.main-nav__item-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $link-color;
+  font-family: $font-family-bold;
+  font-size: 18px;
+  line-height: 32px;
+  padding: 17px 68px;
+ }
+
+.main-nav__item {
+  text-align: center;
+  padding: 17px 0;
+  outline: 1px dotted yellow;
+}
+
+.main-nav__close {
+  cursor: pointer;
+  outline:none;
+  border: none;
+  font-size: 0;
+  background: url("/img/icon-menu-cross.svg") no-repeat;
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 24px;
+  top: -48px;
+  left: 276px;
+}
+
+.main-nav__toggle {
+  display: none;
+}
+
+@media (min-width: $tablet-widths) {
+  .main-nav {
+    margin-top: 35px;
+  }
+
+  .main-nav__close {
+    top: -62px;
+    left: 615px;
+  }
+
+  .main-nav__item-link {
+
+    padding: 17px 258px;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    //justify-content: center;
+
+  }
+
+  .main-nav {
+    margin-top: 25px;
+  }
+
+  .main-nav__item {
+    margin-right: 80px;
+  }
+
+  .main-nav__item:last-child {
+    margin-right: 0;
+  }
+
+  .main-nav__item-link {
+    text-transform: capitalize;
+    padding: 17px 0;
+    font-size: 18px;
+    font-family: $font-family;
+    font-weight: 400;
+    line-height: 18px;
+  }
+
+}

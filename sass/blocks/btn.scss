@@ -1,0 +1,66 @@
+.btn {
+  width: 280px;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  font-family: $font-family-bold;
+  color: $link-color;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 18px;
+  border: 3px solid $link-color;
+  padding: 17px 0;
+  border-radius: 50px;
+
+  &--form {
+    width: 280px;
+    margin: 0 auto;
+    background-color: $green-submit;
+    padding: 22px 0;
+    //background-color: #d22856;
+    border: none;
+    border-radius: 3px;
+    text-transform: uppercase;
+
+  }
+
+  &--download {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    //width: 280px;
+    }
+
+  &--photo {
+    width: 280px;
+    margin: 0 auto;
+    color: #d22856;
+    border: 3px solid #d22856;
+  }
+
+  &--reset {
+    color: $gray-light;
+    border: 3px solid $gray-light;
+  }
+ }
+
+@media (min-width: $tablet-widths) {
+  .btn {
+    width: 260px;
+
+    &--form {
+      margin: 0;
+      margin-left: 20px;
+      width: 300px;
+    }
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .btn {
+    width: 186px;
+
+  }
+;
+}

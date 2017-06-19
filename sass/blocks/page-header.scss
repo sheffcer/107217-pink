@@ -1,0 +1,31 @@
+.page-header {
+  //min-height: 67px;
+}
+
+.page-header__inner {
+  @include container();
+   outline: 2px dashed indianred;
+}
+
+@media (min-width: $tablet-widths) {
+  .page-header {
+   }
+
+  .page-header__inner {
+  }
+}
+
+
+@media (min-width: $desktop-widths) {
+  .page-header {
+    min-height: 112px;
+  }
+
+  .page-header__inner {
+    width: 940px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+}

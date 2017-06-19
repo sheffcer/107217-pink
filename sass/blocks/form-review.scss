@@ -1,0 +1,27 @@
+.form-review {
+  margin-top: -10px;
+}
+
+.form-review__inner {
+  @include container();
+}
+
+
+@media (min-width: $tablet-widths) {
+  .form-review {
+    margin-top: -27px;
+  }
+
+  .form-review__inner {
+    display: flex;
+    flex-direction: column;
+
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .form-review__inner {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

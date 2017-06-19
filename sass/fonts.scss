@@ -19,3 +19,14 @@
           url("../fonts/opensansbold.woff2") format("woff2"),
           url("../fonts/opensansbold.woff") format("woff");
 }
+
+@font-face {
+  font-family: "Open Sans Light";
+  font-weight: normal;
+  font-style: normal;
+  src:
+          local("Open Sans Light"),
+          local("Open Sans-Light"),
+          url("../fonts/opensanslight.woff2") format("woff2"),
+          url("../fonts/opensanslight.woff") format("woff");
+}
