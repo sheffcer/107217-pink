@@ -47,6 +47,7 @@
 
 @media (min-width: $tablet-widths) {
   .field-text {
+    position: relative;
     margin-bottom: 50px;
     display: flex;
     flex-direction: row;
@@ -54,6 +55,7 @@
     justify-content: space-between;
 
     &--contacts {
+      position: relative;
       padding: 0;
       display: flex;
       flex-direction: column;
@@ -68,28 +70,81 @@
       left: 460px;
       top: -68px;
     }
-   }
+  }
 
   .field-text__help-text {
     margin-top: 120px;
   }
 
   .field-text__input {
-    width: 100%;
+      width: 100%;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: #d22856;
+    }
+
+    &--number::after {
+      //left: 0;
+      //top: 0;
+      width: 40px;
+      height: 40px;
+      background-size: 40px 40px;
+      color: #d22856;
+      background-image: url("/img/icon-heart.svg");
+      background-repeat: no-repeat;
+     //background-size: contain;
+    }
+
+
+    &--mail::after {
+
+    }
+
   }
 
-  .field-text--contacts span {
+  .field-text--contacts .field-text__span {
+
     order: 2;
     display: block;
     margin-top: -10px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: #d22856;
+      width: 64px;
+      height: 58px;
+      background-size: 40px 40px;
+      color: #d22856;
+      background-image: url("/img/icon-heart.svg");
+      background-repeat: no-repeat;
+    }
+
+    &--number::after {
+      top: 0;
+      left: 380px;
+    }
+
+    &--mail::after {
+      top: 0;
+      left: 380px;
+    }
+
   }
 
   .field-text--contacts .field-text__input {
+    position: relative;
     order: 1;
     width: 500px;
     margin: 0 auto;
     margin-bottom: 20px;
+
+
+
   }
+
 }
 
 @media (min-width: $desktop-widths) {
