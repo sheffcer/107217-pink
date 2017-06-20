@@ -111,7 +111,7 @@ gulp.task("images", function () {
 
 gulp.task("symbols", function () {
   console.log('---------- Сборка SVG-спрайта');
-  return gulp.src("build/img/icons/*.svg")
+  return gulp.src("build/img/*.svg")
     .pipe(svgmin())
     .pipe(svgstore({
       inlineSvg: true
@@ -151,6 +151,17 @@ gulp.task("html:update", ["html:copy"], function (done) {
   server.reload();
   done();
 });
+
+
+// gulp.task("js:copy", function () {
+//   return gulp.src("/js/*.js")
+//     .pipe(gulp.dest("build/js"))
+// });
+//
+// gulp.task("js:update", ["js:copy"], function (done) {
+//   server.reload();
+//   done();
+// });
 
 
 gulp.task("serve", ["style", "html:update"], function() {

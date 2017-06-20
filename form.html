@@ -7,10 +7,16 @@
   <link rel="stylesheet" href="/css/normalize.css">
 </head>
 <body>
+<?php include_once("img/symbols.svg"); ?>
 <header class="page-header">
   <div class="page-header__inner">
     <div class="logo  logo--header">
-      <img src="img/logo-pink-white-mobile.svg" alt="logo">
+      <picture>
+        <source media="(min-width: 1150px)" srcset="img/logo-pink-white-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-pink-white-tablet.svg">
+        <img src="img/logo-pink-white-mobile.svg" alt="logo">
+      </picture>
+      <!--<img src="img/logo-pink-white-mobile.svg" alt="logo">-->
     </div>
     <nav class="main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle" type="button">open</button>

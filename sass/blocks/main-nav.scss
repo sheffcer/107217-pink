@@ -90,6 +90,15 @@
 
     padding: 17px 258px;
   }
+
+  .main-nav--closed .main-nav__toggle {
+    top: -63px;
+    left: 617px;
+  }
+  .main-nav--opened .main-nav__toggle {
+    top: -63px;
+    left: 617px;
+  }
 }
 
 @media (min-width: $desktop-widths) {
