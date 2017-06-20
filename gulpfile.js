@@ -166,6 +166,7 @@ gulp.task("serve", ["style", "html:update"], function() {
   gulp.watch("sass/**/*.scss", ["style"]);
   // gulp.watch("less/**/*.less", ["style-watch"]);
   gulp.watch("*.html", ["html:update"]);
+  // gulp.watch("*.js", ["js:update"]);
   // gulp.watch("*.html").on("change", server.reload);
 });
 
@@ -175,7 +176,7 @@ gulp.task("build", function (fn) {
     "clean",
     "copy",
     "style",
-    "images",
+    // "images",
     "symbols",
     fn
   );
@@ -188,3 +189,15 @@ gulp.task('deploy', function() {
   return gulp.src('./build/**/*')
     .pipe(ghPages());
 });
+
+// Перезагрузка браузера
+function reload (done) {
+  browserSync.reload();
+  done();
+}
+
+// gulp.task('watch:js', ['js'], reload);
+//
+// if(lists.js.length) {
+//   gulp.watch(lists.js, ['watch:js']);
+// }
