@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Form</title>
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/normalize.css">
 </head>
 <body>
 <header class="page-header">
@@ -11,7 +12,8 @@
     <div class="logo  logo--header">
       <img src="img/logo-pink-white-mobile.svg" alt="logo">
     </div>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--opened main-nav--nojs">
+      <button class="main-nav__toggle" type="button">open</button>
       <div class="main-nav__inner">
         <ul class="main-nav__list">
           <li class="main-nav__item"><a href="index.html"class="main-nav__item-link">Главная</a></li>
@@ -19,8 +21,6 @@
           <li class="main-nav__item"><a href="form.html" class="main-nav__item-link">Конкурс</a></li>
           <li class="main-nav__item"><a href="https://htmlacademy.ru/" class="main-nav__item-link">Html Academy</a></li>
         </ul>
-        <button class="main-nav__close" type="button">close</button>
-        <button class="main-nav__toggle" type="button">open</button>
       </div>
     </nav>
   </div>
@@ -154,6 +154,6 @@
     </div>
   </div>
 </footer>
-
+<script src="/js/main.js"></script>
 </body>
 </html>
