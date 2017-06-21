@@ -1,7 +1,9 @@
 .logo {
-  padding-top: 20px;
-  padding-left: 20px;
 
+  &--header {
+    padding-top: 20px;
+    padding-left: 20px;
+  }
   &--footer {
     width: 156px;
     margin: 0 auto;
@@ -12,9 +14,11 @@
 
 @media (min-width: $tablet-widths) {
   .logo {
-    padding-top: 45px;
-    padding-left: 90px;
 
+  &--header {
+    padding-top: 25px;
+    padding-left: 20px;
+  }
 
   &--footer {
     padding: 0;
@@ -22,5 +26,15 @@
     margin-left: 18px;
   }
 
+  }
+}
+
+
+@media (min-width: $desktop-widths) {
+  .logo {
+    &--header {
+      padding: 0;
+      padding-top: 25px;
+    }
   }
 }

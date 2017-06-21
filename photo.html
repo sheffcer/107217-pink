@@ -8,24 +8,27 @@
 </head>
 <body>
 <header class="page-header">
-    <div class="page-header__inner">
-        <div class="logo  logo--header">
-            <img src="img/logo-pink-white-mobile.svg" alt="logo">
-        </div>
-        <nav class="main-nav">
-            <div class="main-nav__inner">
-                <ul class="main-nav__list">
-                    <li class="main-nav__item"><a href="index.html" class="main-nav__item-link">Главная</a></li>
-                    <li class="main-nav__item"><a href="photo.html" class="main-nav__item-link">Фотографии</a></li>
-                    <li class="main-nav__item"><a href="form.html" class="main-nav__item-link">Конкурс</a></li>
-                    <li class="main-nav__item"><a href="https://htmlacademy.ru/" class="main-nav__item-link">Html
-                        Academy</a></li>
-                </ul>
-                <button class="main-nav__close" type="button">close</button>
-                <button class="main-nav__toggle" type="button">open</button>
-            </div>
-        </nav>
+  <div class="page-header__inner">
+    <div class="logo  logo--header">
+      <picture>
+        <source media="(min-width: 1150px)" srcset="img/logo-pink-white-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-pink-white-tablet.svg">
+        <img src="img/logo-pink-white-mobile.svg" alt="logo">
+      </picture>
+      <!--<img src="img/logo-pink-white-mobile.svg" alt="logo">-->
     </div>
+    <nav class="main-nav main-nav--opened main-nav--nojs">
+      <button class="main-nav__toggle" type="button">open</button>
+      <div class="main-nav__inner">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="index.html"class="main-nav__item-link">Главная</a></li>
+          <li class="main-nav__item"><a href="photo.html"class="main-nav__item-link">Фотографии</a></li>
+          <li class="main-nav__item"><a href="form.html" class="main-nav__item-link">Конкурс</a></li>
+          <li class="main-nav__item"><a href="https://htmlacademy.ru/" class="main-nav__item-link">Html Academy</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 </header>
 <main>
     <section class="intro  intro--photo">
