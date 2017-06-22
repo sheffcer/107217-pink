@@ -6,9 +6,11 @@
 }
 
 .page-footer__social {
-  width: 180px;
+  width: 190px;
   margin: 0 auto;
-}
+  display: flex;
+  justify-content: space-around;
+ }
 
 .page-footer__copyright {
   margin-left: 95px;
