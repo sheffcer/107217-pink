@@ -55,7 +55,7 @@ var cheerio = require('gulp-cheerio');
 var svgmin = require("gulp-svgmin");
 var svgstore = require("gulp-svgstore");
 var imagemin = require("gulp-imagemin");
-var run = require("run-sequence");
+var run = require("run-sequence"); //Run a series of gulp tasks
 var server = require("browser-sync").create();
 var ghPages = require('gulp-gh-pages');
 // var reload      = server.reload;
@@ -153,18 +153,18 @@ gulp.task("html:update", ["html:copy"], function (done) {
 });
 
 
-// gulp.task("js:copy", function () {
-//   return gulp.src("/js/*.js")
-//     .pipe(gulp.dest("build/js"))
-// });
-//
-// gulp.task("js:update", ["js:copy"], function (done) {
-//   server.reload();
-//   done();
-// });
+gulp.task("js:copy", function () {
+  return gulp.src("js/**")
+    .pipe(gulp.dest("build"))
+});
+
+gulp.task("js:update", ["js:copy"], function (done) {
+  server.reload();
+  done();
+});
 
 
-gulp.task("serve", ["style", "html:update"], function() {
+gulp.task("serve", ["style", "html:update", "js:update"], function() {
   console.log('---------- Запуск локального сервера browser-sync');
   server.init({
     server: "build",
@@ -175,11 +175,9 @@ gulp.task("serve", ["style", "html:update"], function() {
   });
 
   gulp.watch("sass/**/*.scss", ["style"]);
-  // gulp.watch("less/**/*.less", ["style-watch"]);
   gulp.watch("*.html", ["html:update"]);
-  // gulp.watch("*.js", ["js:update"]);
-  // gulp.watch("*.html").on("change", server.reload);
-});
+  gulp.watch("js/**", ["js:update"]);
+  });
 
 gulp.task("build", function (fn) {
   console.log('---------- Сборка проекта в продакшн');
