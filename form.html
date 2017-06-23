@@ -179,6 +179,25 @@
     </div>
   </div>
 </footer>
+<div class="modal  modal--ok  modal--invisible">
+  <!--<span class="modal__close">&times;</span>-->
+  <div class="modal__content  modal__content--ok">
+    <h3 class="modal__name">Что-то пошло не так!</h3>
+    <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <button class="btn btn--form  btn--modal">ок</button>
+  </div>
+</div>
+<div class="modal  modal--failure">
+  <!--<span class="modal__close">&times;</span>-->
+  <div class="modal__content  modal__content--failure">
+    <h3 class="modal__name">Ваша заявка отправлена</h3>
+    <p class="modal__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и
+      оповестим вас.</p>
+    <button class="btn btn--form  btn--modal">закрыть окно</button>
+  </div>
 <script src="/js/main.js"></script>
+<script src="/js/picturefill.js"></script>
+<script src="/js/svg4everybody.min.js"></script>
+<script>svg4everybody(); // run it now or whenever you are ready</script>
 </body>
 </html>
