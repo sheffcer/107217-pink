@@ -46,3 +46,24 @@
 .social-link:nth-child(-n+2) {
   //margin-right: 5px;
 }
+
+.social-link__img {
+  position: absolute;
+  content: "";
+  fill: $red-danger;
+
+  &--twitter {
+    left: 16px;
+    top: 16px;
+  }
+
+  &--facebook {
+    left: 18px;
+    top: 14px;
+  }
+
+  &--youtube {
+    left: 16px;
+    top: 16px;
+  }
+}

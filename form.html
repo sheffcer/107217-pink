@@ -23,8 +23,8 @@
       <button class="main-nav__toggle" type="button">open</button>
       <div class="main-nav__inner">
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="index.html"class="main-nav__item-link">Главная</a></li>
-          <li class="main-nav__item"><a href="photo.html"class="main-nav__item-link">Фотографии</a></li>
+          <li class="main-nav__item"><a href="index.html" class="main-nav__item-link">Главная</a></li>
+          <li class="main-nav__item"><a href="photo.html" class="main-nav__item-link">Фотографии</a></li>
           <li class="main-nav__item"><a href="form.html" class="main-nav__item-link">Конкурс</a></li>
           <li class="main-nav__item"><a href="https://htmlacademy.ru/" class="main-nav__item-link">Html Academy</a></li>
         </ul>
@@ -40,7 +40,8 @@
   </section>
   <section class="promo-heading  promo-heading--form">
     <div class="promo-heading__inner">
-      <h2 class="promo-heading__text  promo-heading__text--form">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+      <h2 class="promo-heading__text  promo-heading__text--form">Поделитесь своей историей и получите шанс выиграть
+        ценный приз — 1000 миль на вашу бонусную карту!
         <span>Пожалуйста, заполните форму ниже:</span>
       </h2>
     </div>
@@ -96,29 +97,31 @@
         <h2 class="fields-group__name  fields-group__name--title">Контактная информация</h2>
         <div class="field-group-wrap"><label class="field-text field-text--contacts fields-group__item" for="phone">
           <span class="field-text__span  field-text__span--number">Номер, пожалуйста</span>
-          <input class="field-text__input  field-text__input--number" type="text" id="phone" name="phone" placeholder="Введите телефон">
+          <input class="field-text__input  field-text__input--number" type="text" id="phone" name="phone"
+                 placeholder="Введите телефон">
         </label>
           <label class="field-text field-text--contacts fields-group__item" for="mail">
             <span class="field-text__span  field-text__span--mail">Адрес почты</span>
-            <input class="field-text__input field-text__input--mail" type="text" id="mail" name="mail" placeholder="Введите почту*">
+            <input class="field-text__input field-text__input--mail" type="text" id="mail" name="mail"
+                   placeholder="Введите почту*">
           </label></div>
       </div>
       <div class="field-radio  field-radio--custom">
         <!--<div class="field-radio__input-wrap">-->
         <h2 class="field-radio__name  field-radio__name--title">С каким приложением <br>путешествовали?</h2>
         <!--<div class="field-radio__input-wrap">-->
-          <label class="field-radio__name" for="ios">
-            <input class="field-radio__input" type="radio" name="radio" id="ios" checked>
-            <span class="field-radio__name-text">Pink для iOS</span>
-          </label>
-          <label class="field-radio__name" for="android">
-            <input class="field-radio__input" type="radio" name="radio" id="android">
-            <span class="field-radio__name-text">Pink на Android</span>
-          </label>
-          <label class="field-radio__name" for="windows">
-            <input class="field-radio__input" type="radio" name="radio" id="windows" checked>
-            <span class="field-radio__name-text">Windows Phone</span>
-          </label>
+        <label class="field-radio__name" for="ios">
+          <input class="field-radio__input" type="radio" name="radio" id="ios" checked>
+          <span class="field-radio__name-text">Pink для iOS</span>
+        </label>
+        <label class="field-radio__name" for="android">
+          <input class="field-radio__input" type="radio" name="radio" id="android">
+          <span class="field-radio__name-text">Pink на Android</span>
+        </label>
+        <label class="field-radio__name" for="windows">
+          <input class="field-radio__input" type="radio" name="radio" id="windows" checked>
+          <span class="field-radio__name-text">Windows Phone</span>
+        </label>
         <!--</div>-->
       </div>
       <div class="field-aria">
@@ -128,15 +131,15 @@
                     placeholder="textarea">Можно прям в красках, не стесняясь в выражениях</textarea>
         </div>
       </div>
-    <!--</div>-->
-    <div class="field-actions  field-actions--form">
-      <input class="btn  btn--form" type="submit" value="Отправить форму">
-    </div>
-    <label class="field-text  field-text--form">
-      <div class="field-text__input-wrap">
-        <div class="field-text__help-text">* — обязательные поля</div>
+      <!--</div>-->
+      <div class="field-actions  field-actions--form">
+        <input class="btn  btn--form" type="submit" value="Отправить форму">
       </div>
-    </label>
+      <label class="field-text  field-text--form">
+        <div class="field-text__input-wrap">
+          <div class="field-text__help-text">* — обязательные поля</div>
+        </div>
+      </label>
     </div>
   </form>
 
@@ -148,21 +151,18 @@
     </div>
     <div class="page-footer__social">
       <!--<div class="social-links">-->
-      <!--<a href="#" class="social-link  social-link&#45;&#45;twitter">twitter</a>-->
-      <a href="#" class="social-link  social-link--twitter">
-        <svg class="icon  icon--twitter">
+      <a href="#" class="social-link">
+        <svg class="social-link__img  social-link__img--twitter">
           <use xlink:href="img/symbols.svg#icon-twitter"></use>
         </svg>
       </a>
-      <!--<a href="#" class="social-link  social-link&#45;&#45;facebook">facebook</a>-->
-      <a href="#" class="social-link  social-link--facebook">
-        <svg class="icon  icon--facebook">
+      <a href="#" class="social-link">
+        <svg class="social-link__img  social-link__img--facebook">
           <use xlink:href="img/symbols.svg#icon-facebook"></use>
         </svg>
       </a>
-      <!--<a href="#" class="social-link  social-link&#45;&#45;youtube">youtube</a>-->
-      <a href="#" class="social-link  social-link--youtube">
-        <svg class="icon  icon--youtube">
+      <a href="#" class="social-link">
+        <svg class="social-link__img  social-link__img--youtube">
           <use xlink:href="img/symbols.svg#icon-youtube"></use>
         </svg>
       </a>
@@ -171,7 +171,10 @@
     <div class="page-footer__copyright">
       Разработано
       <a href="https://htmlacademy.ru/" class="page-footer__link ">
-        <img src="/img/htmlacademy.svg" alt="HTMLAcademy" width="35" height="35">
+        <svg class="page-footer__copyright-image">
+          <use xlink:href="img/symbols.svg#htmlacademy"></use>
+        </svg>
+        <!--<img src="/img/htmlacademy.svg" alt="HTMLAcademy" width="35" height="35">-->
       </a>
     </div>
   </div>

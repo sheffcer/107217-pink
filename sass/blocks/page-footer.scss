@@ -13,9 +13,30 @@
  }
 
 .page-footer__copyright {
+  position: relative;
   margin-left: 95px;
   margin-top: 20px;
 }
+
+.page-footer__copyright  {
+  position: relative;
+}
+
+.page-footer__copyright svg {
+  position: absolute;
+  top: -12px;
+  left: 50px;
+  transform: scale(0.7);
+  fill: $red-danger;
+}
+
+//.page-footer__copyright-image {
+//  position: absolute;
+//  top: -10px;
+//  left: 0;
+//  transform: scale(0.7);
+//  fill: $red-danger;
+//}
 
 .page-footer__inner {
   @include  container();
@@ -30,7 +51,7 @@
       margin-top: -50px;
     }
 
-    &--show{
+    &--show {
       display: block;
     }
   }
@@ -46,6 +67,7 @@
     margin-left: 0;
     flex-basis: 150px;
   }
+
 
   .page-footer__social {
     min-width: 200px;
