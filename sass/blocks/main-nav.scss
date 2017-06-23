@@ -3,6 +3,7 @@
   position: relative;
   margin-top: 20px;
   outline: 2px dashed orangered;
+  margin-bottom: 20px;
  }
 
 .main-nav__inner {
@@ -79,6 +80,7 @@
 @media (min-width: $tablet-widths) {
   .main-nav {
     margin-top: 35px;
+    margin-bottom: 15px;
   }
 
   .main-nav__close {
@@ -89,6 +91,15 @@
   .main-nav__item-link {
 
     padding: 17px 258px;
+  }
+
+  .main-nav--closed .main-nav__toggle {
+    top: -56px;
+    left: 617px;
+  }
+  .main-nav--opened .main-nav__toggle {
+    top: -56px;
+    left: 617px;
   }
 }
 
@@ -101,16 +112,17 @@
   }
 
   .main-nav {
-    margin-top: 25px;
+    margin-top: 28px;
   }
 
   .main-nav__item {
-    margin-right: 80px;
+    margin-right: 85px;
   }
 
   .main-nav__item:last-child {
     margin-right: 0;
   }
+
 
   .main-nav__item-link {
     text-transform: capitalize;

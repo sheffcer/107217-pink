@@ -10,9 +10,15 @@
 <header class="page-header">
   <div class="page-header__inner">
     <div class="logo  logo--header">
-      <img src="img/logo-pink-white-mobile.svg" alt="logo">
+      <picture>
+        <source media="(min-width: 1150px)" srcset="img/logo-pink-white-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-pink-white-tablet.svg">
+        <img src="img/logo-pink-white-mobile.svg" alt="logo">
+      </picture>
+      <!--<img src="img/logo-pink-white-mobile.svg" alt="logo">-->
     </div>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--opened main-nav--nojs">
+      <button class="main-nav__toggle" type="button">open</button>
       <div class="main-nav__inner">
         <ul class="main-nav__list">
           <li class="main-nav__item"><a href="index.html" class="main-nav__item-link">Главная</a></li>
@@ -20,8 +26,6 @@
           <li class="main-nav__item"><a href="form.html" class="main-nav__item-link">Конкурс</a></li>
           <li class="main-nav__item"><a href="https://htmlacademy.ru/" class="main-nav__item-link">Html Academy</a></li>
         </ul>
-        <button class="main-nav__close" type="button">close</button>
-        <button class="main-nav__toggle" type="button">open</button>
       </div>
     </nav>
   </div>
@@ -169,16 +173,28 @@
     <img src="/img/bg-map-mobile@1x.png" alt="map">
   </div>
 </section>
-<footer class="page-footer  page-footer--none  page-footer--show">
+<footer class="page-footer  page-footer--show  page-footer--form">
   <div class="page-footer__inner">
     <div class="logo  logo--footer">
       <img src="img/logo-pink-blue-mobile.svg" alt="logo">
     </div>
     <div class="page-footer__social">
       <!--<div class="social-links">-->
-        <a href="#" class="social-link  social-link--twitter">twitter</a>
-        <a href="#" class="social-link  social-link--facebook">facebook</a>
-        <a href="#" class="social-link  social-link--youtube">youtube</a>
+      <a href="#" class="social-link">
+        <svg class="social-link__img  social-link__img--twitter">
+          <use xlink:href="img/symbols.svg#icon-twitter"></use>
+        </svg>
+      </a>
+      <a href="#" class="social-link">
+        <svg class="social-link__img  social-link__img--facebook">
+          <use xlink:href="img/symbols.svg#icon-facebook"></use>
+        </svg>
+      </a>
+      <a href="#" class="social-link">
+        <svg class="social-link__img  social-link__img--youtube">
+          <use xlink:href="img/symbols.svg#icon-youtube"></use>
+        </svg>
+      </a>
       <!--</div>-->
     </div>
     <div class="page-footer__copyright">
@@ -189,5 +205,9 @@
     </div>
   </div>
 </footer>
+<script src="/js/main.js"></script>
+<script src="/js/picturefill.js"></script>
+<script src="/js/svg4everybody.min.js"></script>
+<script>svg4everybody(); // run it now or whenever you are ready</script>
 </body>
 </html>
