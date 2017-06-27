@@ -21,8 +21,19 @@
     border: none;
     border-radius: 3px;
     text-transform: uppercase;
-
   }
+
+  &--form:hover {
+    background-color: $green-submit-hover;
+    transition: 0.4s;
+  }
+
+  &--form:active {
+    background-color: $green-submit-hover;
+    transition: 0.4s;
+    color: rgba(255, 255, 255 , 0.3);
+  }
+
 
   &--download {
     margin-left: 20px;
@@ -64,6 +75,10 @@
 @media (min-width: $desktop-widths) {
   .btn {
     width: 186px;
+    &--form {
+      width: 300px;
+    }
+
     &--modal {
       width: 300px;
     }

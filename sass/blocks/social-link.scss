@@ -20,6 +20,7 @@
 
   &:hover::before {
     border: 2px solid $promo-heading-color;
+    transition: 0.4s;
   }
   
   &--twitter {

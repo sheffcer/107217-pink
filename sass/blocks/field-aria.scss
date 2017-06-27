@@ -34,6 +34,16 @@
   color: $promo-heading-color;
   text-align: center;
 
+
+  &:hover {
+    border: 2px solid $promo-heading-color;
+    transition: 0.4s;
+  }
+
+  &:focus {
+    border: 2px solid $red-danger;
+    transition: 0.4s;
+  }
 }
 
 @media (min-width: $tablet-widths) {

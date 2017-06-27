@@ -48,6 +48,11 @@
     background-repeat: no-repeat;
   }
 
+  & + .field-radio__name-text:hover::before {
+    border: 2px solid #000000;
+    transition: 0.4s;
+  }
+
   //&:checked + .field-radio__name-text:before {
   //
   //  background-image: url("/img/radiobutton--checked.svg");
@@ -65,8 +70,12 @@
    }
 
   &:focus + .field-radio__name-text:before {
-    @include focus();
+    //@include focus();
+    outline: 0;
+    border: 2px solid $red-danger;
+    transition: 0.4s;
   }
+
 }
 
 @media (min-width: $tablet-widths) {

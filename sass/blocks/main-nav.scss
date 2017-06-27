@@ -2,7 +2,7 @@
   //width: 660px;
   position: relative;
   margin-top: 20px;
-  outline: 2px dashed orangered;
+  //outline: 2px dashed orangered;
   margin-bottom: 20px;
  }
 
@@ -24,26 +24,51 @@
   font-size: 18px;
   line-height: 32px;
   padding: 17px 68px;
+
+  &:hover {
+    color:$red-danger;
+    transition: 0.4s;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.75);
+    transition: 0.4s;
+  }
+
  }
 
 .main-nav__item {
   text-align: center;
   padding: 17px 0;
-  outline: 1px dotted yellow;
+  //outline: 1px dotted yellow;
 }
 
 
 .main-nav--closed .main-nav__toggle {
   position: absolute;
   content: "";
-  left: 276px;
+  left: 250px;
   top: -48px;
-  width: 24px;
-  height: 24px;
+  width: 52px;
+  height: 29px;
+  //width: 24px;
+  //height: 24px;
   font-size: 0;
   border: none;
   cursor: pointer;
   background: url("/img/icon-menu-burger.svg") no-repeat;
+
+  &:hover{
+    background: url("/img/icon-menu-burger-hover.svg") no-repeat;
+    transition: 0.4s;
+  }
+
+  &:active{
+    background: url("/img/icon-menu-burger-hover.svg") no-repeat;
+    transition: 0.4s;
+    opacity: 0.75;
+  }
+
  }
 
 .main-nav--opened .main-nav__toggle {
@@ -57,7 +82,20 @@
   border: none;
   cursor: pointer;
   background: url("/img/icon-menu-cross.svg") no-repeat;
-}
+
+  &:hover {
+    background: url("/img/icon-menu-cross-hover.svg") no-repeat;
+    transition: 0.4s;
+  }
+
+  &:active {
+    background: url("/img/icon-menu-cross-hover.svg") no-repeat;
+    transition: 0.4s;
+    opacity: 0.75;
+  }
+
+ }
+
 
 @media (max-width: $mobile-widths-only) {
   .main-nav--closed .main-nav__item {
@@ -74,6 +112,12 @@
 
   .main-nav--nojs .main-nav__item {
     display: block;
+  }
+
+  .main-nav__item {
+    background-color: $promo-heading-color;
+    border-top: 1px solid black;
+    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0 0 rgba(100, 100, 100, 0.2);
   }
 }
 
@@ -94,11 +138,11 @@
   }
 
   .main-nav--closed .main-nav__toggle {
-    top: -56px;
-    left: 617px;
+    top: -60px;
+    left: 590px;
   }
   .main-nav--opened .main-nav__toggle {
-    top: -56px;
+    top: -60px;
     left: 617px;
   }
 }

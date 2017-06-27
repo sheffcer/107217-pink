@@ -20,7 +20,16 @@
   //border-radius: @border-radius;
 
   &:focus {
-    @include  focus();
+    //@include  focus();
+    outline: 0;
+    border: 2px solid $red-danger;
+    transition: 0.4s;
+   }
+
+  &:active {
+    outline: 0;
+    border: 2px solid $red-danger;
+    transition: 0.4s;
   }
 
   &::placeholder {
@@ -31,7 +40,13 @@
     //padding-left: 23px;
     opacity: 1;
   }
-}
+
+  &:hover {
+    border: 2px solid $promo-heading-color;
+    transition: 0.4s;
+  }
+
+ }
 
 .field-text__help-text {
   margin-top: 35px;
@@ -128,6 +143,7 @@
       background-repeat: no-repeat;
       background-size: 20px 20px;
       background-position: 18px 18px;
+      fill: red;
     }
 
     &--mail::after {
