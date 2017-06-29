@@ -20,6 +20,10 @@
   & img {
     margin-top: 105px;
   }
+
+  @media (min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
+    background-image: url("/img/bg-back-mobile@2x.jpg");
+  }
 }
 
 .intro__title {
@@ -69,15 +73,20 @@
     display: flex;
     flex-direction: row;
     padding-bottom: 82px;
+    background-image: url("/img/bg-back-tablet@1x.jpg");
 
     & img {
       order:2;
+    }
+
+    @media (min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
+      background-image: url("/img/bg-back-tablet@2x.jpg");
     }
   }
 
   .intro__title {
     order: 1;
-    outline: 2px dashed deeppink;
+    //outline: 2px dashed deeppink;
     margin-top: 80px;
     margin-left: 75px;
     margin-right: 70px;
@@ -107,6 +116,13 @@
 @media (min-width: $desktop-widths) {
   .intro__inner {
     padding-bottom: 100px;
+    background-image: url("/img/bg-back-desktop@1x.jpg");
+
+
+
+    @media (min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
+      background-image: url("/img/bg-back-desktop@2x.jpg");
+    }
   }
 
   .intro__title {
