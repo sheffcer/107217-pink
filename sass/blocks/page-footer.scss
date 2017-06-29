@@ -9,22 +9,24 @@
   width: 190px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-around;
+  //justify-content: space-around;
  }
 
 .page-footer__copyright {
   position: relative;
   margin-left: 95px;
-  margin-top: 20px;
+  margin-top: 40px;
+  font-family: $font-family;
+  font-size: 14px;
+  line-height: 18px;
+  color: $promo-heading-color;
+  font-weight: normal;
 }
 
-.page-footer__copyright  {
-  position: relative;
-}
 
 .page-footer__copyright svg {
   position: absolute;
-  top: -12px;
+  top: -30px;
   left: 50px;
   transform: scale(0.7);
   fill: $red-danger;
@@ -32,8 +34,8 @@
 
 //.page-footer__copyright-image {
 //  position: absolute;
-//  top: -10px;
-//  left: 0;
+//  top: -30px;
+//  left: 50px;
 //  transform: scale(0.7);
 //  fill: $red-danger;
 //}
@@ -70,9 +72,14 @@
 
 
   .page-footer__social {
-    min-width: 200px;
+    //min-width: 200px;
     //display: inline-flex;
     outline: 1px dotted red;
+  }
+
+  .page-footer__copyright {
+    margin-top: 15px;
+    font-size: 18px;
   }
 
 }
@@ -82,7 +89,15 @@
     margin-top: 60px;
 
     &--form {
-      margin-top: -60px;
+      margin-top: -65px;
     }
+  }
+
+  .page-footer__copyright {
+    flex-basis: 165px;
+  }
+
+  .page-footer__copyright svg {
+    left: 75px;
   }
 }

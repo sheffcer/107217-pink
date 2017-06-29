@@ -1,10 +1,11 @@
 .social-link {
+  margin-right: 10px;
   display: flex;
   flex-direction: row;
   //display: inline-block;
   //vertical-align: top;
   position: relative;
-  outline: 1px dotted blue;
+  //outline: 1px dotted blue;
   width: 52px;
   height: 52px;
   font-size: 0;
@@ -42,6 +43,10 @@
     //background-image: url("/img/icon-youtube.svg");
     //background-repeat: no-repeat;
   }
+}
+
+.social-link:nth-child(3) {
+  margin-right: 0;
 }
 
 .social-link:nth-child(-n+2) {
