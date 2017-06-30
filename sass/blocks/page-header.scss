@@ -22,7 +22,12 @@
 
 @media (min-width: $desktop-widths) {
   .page-header {
-    min-height: 112px;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 99px;
+    background-color: #000;
+    //opacity: 0.3;
+    
   }
 
   .page-header__inner {
