@@ -11,13 +11,13 @@
     margin-bottom: 40px;
   }
 
-  & img[src="img/logo-pink-white-mobile.svg"]:hover {
-    opacity: 0;
-  }
-
-  & img[src="img/logo-pink-white-mobile.svg"]:active {
-    opacity: 1;
-  }
+  //& img[src="img/logo-pink-white-mobile.svg"]:hover {
+  //  opacity: 0;
+  //}
+  //
+  //& img[src="img/logo-pink-white-mobile.svg"]:active {
+  //  opacity: 1;
+  //}
 
   //& img[src="img/logo-pink-white-mobile.svg"] {
   //  opacity: 0.1;
@@ -26,15 +26,15 @@
 
 .logo__img {
 
-   &:hover {
-     transition: 0.4s;
-     display: block;
-     background-image: url("/img/logo-pink-red-mobile.svg");
-     background-position: 0 0;
-     background-repeat: no-repeat;
-     background-size: 74px 23px;
-     //background-size: cover;
-   }
+   //&:hover {
+   //  transition: 0.4s;
+   //  display: block;
+   //  background-image: url("/img/logo-pink-red-mobile.svg");
+   //  background-position: 0 0;
+   //  background-repeat: no-repeat;
+   //  background-size: 74px 23px;
+   //  //background-size: cover;
+   //}
 
 
    &:active {

@@ -1,9 +1,14 @@
 .features {
-  margin-top: 105px;
+  //margin-top: 105px;
+  margin-top: 25px;
+  margin-bottom: 60px;
 }
 
 .features__inner {
   @include  container();
+  outline: 2px dashed blue;
+  padding-top: 65px;
+  max-height: 740px;
 }
 
 .features__list {
@@ -38,11 +43,16 @@
 }
 
 .features__img {
-  width: 157px;
-  display: block;
-  margin-top: 55px;
-  margin: 0 auto;
-}
+  background-image: url("/img/iphone-screen-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center 5px;
+  width: 320px;
+  height: 280px;
+  //display: block;
+  //margin-top: 55px;
+  //margin: 0 auto;
+  }
+
 
 @media (min-width: $tablet-widths) {
   .features__inner {

@@ -1,12 +1,17 @@
 .download {
   //@include container();
+  height: 270px;
+  margin-bottom: -10px;
 }
 
 
 .download__inner {
   @include container();
   //padding: 0 20px;
+  padding-top: 20px;
   padding-bottom: 20px;
+  outline: 2px dotted green;
+  background-color: $promo-heading-color
 }
 
 
