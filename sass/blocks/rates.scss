@@ -1,20 +1,20 @@
 .rates {
   @include container();
   max-height: 469px;
+  margin-top: 30px;
 }
 
 .rates__inner {
   //padding: 90px 20px 100px;
   outline: 2px dashed green;
-
-
+  padding-top: 60px;
+  padding-bottom: 45px;
 }
 
 .rates__table {
   min-height: 281px;
-  //outline: 2px dashed deeppink ;
   border-collapse: collapse;
-  border: 2px solid $gray-lighter;
+  //border: 2px solid $gray-lighter;
   margin: 30px 0;
   padding-top: 120px;
   }
@@ -24,14 +24,23 @@
   min-height: 60px;
 }
 
+.rates__row td, th {
+  width: 155px;
+  border: 2px solid $gray-lighter;
+}
+
+.rates__row td {
+  height: 46px;
+}
+
 .rates__header {
   border: 0 1px solid $gray-lighter ;
-  width: 280px;
+  //width: 280px;
   height: 40px;
   padding-top: 15px;
-  display: block;
   margin: 0 auto;
   color: $link-color;
+  background-color: $promo-heading-color;
   font-family: $font-family-bold;
   font-size: 18px;
   line-height: 30px;
@@ -59,8 +68,8 @@
 .rates__text--ok::before {
   position: absolute;
   content: "";
-  top: 15px;
-  left: 228px;
+  top: 8px;
+  left: 60px;
   width: 33px;
   height: 24px;
   background: url("/img/icon-yes.svg");
@@ -71,13 +80,63 @@
 .rates__text--no::before {
   position: absolute;
   content: "";
-  top: 15px;
-  left: 228px;
+  top: 8px;
+  left: 60px;
   width: 29px;
   height: 29px;
   background: url("/img/icon-no.svg");
   background-repeat: no-repeat;
   background-size: cover ;
+}
+
+@media (max-width: $mobile-widths-only-table) {
+  .rates__row {
+    width: 280px;
+    height: 60px;
+  }
+  .rates__header {
+    //padding-top: 35px;
+  }
+  .rates__row td:nth-child(4) {
+    display: none;
+  }
+
+  .rates__row td:nth-child(2) {
+    display: none;
+  }
+
+  .rates__row th:nth-child(4) {
+    display: none;
+  }
+  .rates__row th:nth-child(2) {
+    display: none;
+  }
+
+  .rates__row th:nth-child(1) {
+    display: none;
+  }
+
+  .rates__row th:nth-child(3) {
+    display: block;
+    width: 315px;
+    height: 100px;
+    background-color: $promo-heading-color;
+  }
+
+  .rates__row td:nth-child(3) {
+    padding: 0;
+  }
+
+  .rates__text--ok::before {
+    top: 15px;
+    left: -70px;
+  }
+
+  .rates__text--no::before {
+    top: 15px;
+    left: -70px;
+  }
+
 }
 
 @media (min-width: $tablet-widths) {
