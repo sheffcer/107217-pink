@@ -76,16 +76,21 @@
 @media (min-width: $tablet-widths) {
   .download__inner {
     padding-bottom: 100px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
   }
 
   .download {
-    margin-top: -150px;
+    margin-top: -385px;
+    margin-bottom: 150px;
   }
 
   .download__app {
+    order:1;
     display: block;
     margin-left: 25px;
-    margin-top: 45px;
+    //margin-top: -380px;
     margin-bottom: 25px;
   }
 
@@ -94,6 +99,7 @@
     width: 300px;
     font-family: $font-family-light;
     font-size: 18px;
+    order:2;
   }
 }
 
