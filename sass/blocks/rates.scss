@@ -140,11 +140,33 @@
 }
 
 @media (min-width: $tablet-widths) {
+  .rates {
+    margin-top: 0;
+  }
+
+  .rates__inner {
+    width: 660px;
+    margin: 0 auto;
+  }
 
   .rates__table {
-    padding: 0 20px;
-    margin: -15px;
-    min-height:  218px;
+    margin: 0 20px;
+    margin-top: 26px;
+    width: 620px;
+    min-height: 220px;
+   }
+
+  .rates__header {
+    padding: 0;
+  }
+
+  .rates__header span {
+    font-size: 18px;
+  }
+
+  .rates__text {
+    padding-left: 15px;
+    text-transform: capitalize;
   }
 }
 
