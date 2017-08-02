@@ -26,11 +26,12 @@
 
 .rates__row td, th {
   width: 155px;
-  border: 2px solid $gray-lighter;
+  //border: 2px solid $gray-lighter;
+  border: 2px solid greenyellow;
 }
 
 .rates__row td {
-  height: 46px;
+  //height: 46px;
 }
 
 .rates__header {
@@ -147,14 +148,23 @@
   .rates__inner {
     width: 660px;
     margin: 0 auto;
+    padding-bottom: 65px;
   }
 
   .rates__table {
     margin: 0 20px;
     margin-top: 26px;
     width: 620px;
-    min-height: 220px;
+    min-height: 0;
    }
+
+   .rates__row:nth-child(1) {
+    height: 80px;
+  }
+
+  .rates__row:nth-child(n+2) {
+    height: 47px;
+  }
 
   .rates__header {
     padding: 0;

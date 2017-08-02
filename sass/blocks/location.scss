@@ -41,7 +41,8 @@
 
 @media (min-width: $tablet-widths) {
   .location {
-    margin-top: 30px;
+    margin-top: -5px;
+    margin-bottom: 90px;
   }
 
   .location__title {
@@ -52,6 +53,7 @@
   }
 
   .location__list {
+    margin-top: -10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -70,8 +72,9 @@
   }
 
   .location__map {
-    margin-top: 20px;
+    margin-top: 30px;
     min-height: 375px;
+    width: 620px;
   }
 }
 

@@ -3,6 +3,10 @@
     display: none;
   }
 
+  &--show {
+    display: none;
+  }
+
 }
 
 .page-footer__social {
@@ -54,6 +58,10 @@
     }
 
     &--show {
+      display: block;
+    }
+
+    &--index {
       display: block;
     }
   }
