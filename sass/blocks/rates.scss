@@ -181,12 +181,22 @@
 }
 
 @media (min-width: $desktop-widths) {
+  .rates {
+    width: 1200px;
+    padding-bottom: 95px;
+    margin: 0 auto;
+    outline: 2px dashed blueviolet;
+  }
+
   .rates__table {
+    width: 940px;
+    margin: 0 auto;
     min-height: 279px;
   }
 
   .rates__inner {
+    width: 960px;
     padding-top: 145px;
-    padding-bottom: 110px;
+    padding-bottom: 0;
   }
 }
