@@ -33,9 +33,27 @@
 
 .location__map {
   @include container();
+  position: relative;
   width: 320px;
   height: 200px;
   overflow: hidden;
+  outline: 2px dashed;
+  display: block;
+}
+
+.location__marker {
+  left: 140px;
+  top: 70px;
+  position: absolute;
+  background-image: url("/img/icon-map-marker.svg");
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 35px;
+}
+
+.location__map picture {
+  display: block;
+  margin-top: -150px;
 }
 
 
@@ -74,7 +92,16 @@
   .location__map {
     margin-top: 30px;
     min-height: 375px;
-    width: 620px;
+    width: 660px;
+  }
+
+  .location__marker {
+    left: 310px;
+    top: 175px;
+  }
+
+  .location__map picture {
+    margin-top: -330px;
   }
 }
 
@@ -109,7 +136,17 @@
   }
 
   .location__map {
-    margin-top: 35px;
+    //margin-top: 45px;
+    width: 1200px;
     min-height: 502px;
+  }
+
+  .location__marker {
+    left: 580px;
+    top: 165px;
+  }
+
+  .location__map picture {
+    margin-top: -380px;
   }
 }
