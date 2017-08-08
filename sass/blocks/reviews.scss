@@ -14,6 +14,10 @@
   list-style: none;
 }
 
+.reviews__before, .reviews__next {
+  display: none;
+}
+
 .reviews__item {
   outline: 2px dashed crimson;
 }
@@ -93,6 +97,48 @@
   .reviews {
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+
+  .reviews__inner {
+    position: relative;
+
+    &::after {
+      top: 55px;
+      left: 445px;
+      position: absolute;
+      content: "";
+      background-image: url("/img/icon-quotes.svg");
+      background-repeat: no-repeat;
+      width: 76px;
+      height: 79px;
+    }
+  }
+
+  .reviews__before, .reviews__next {
+    display: block;
+    position: absolute;
+    font-size: 0;
+    border: none;
+  }
+
+  .reviews__before {
+    top: 195px;
+    left: 10px;
+    background-image: url("/img/icon-review-arrow-left.svg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 22px;
+    height: 42px;
+  }
+
+  .reviews__next {
+    top: 195px;
+    left: 927px;
+    background-image: url("/img/icon-review-arrow-right.svg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 22px;
+    height: 42px;
   }
 
   .reviews__item {

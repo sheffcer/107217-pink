@@ -103,9 +103,14 @@
 
   .page-footer__copyright {
     flex-basis: 165px;
+    margin-top: 20px;
   }
 
   .page-footer__copyright svg {
     left: 75px;
+  }
+
+  .page-footer__social {
+    margin-top: 5px;
   }
 }

@@ -199,4 +199,14 @@
     padding-top: 145px;
     padding-bottom: 0;
   }
+
+  .rates__text--ok::before {
+    top: 18px;
+    left: 102px;
+  }
+
+  .rates__text--no::before {
+    top: 18px;
+    left: 102px;
+  }
 }
