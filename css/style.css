@@ -237,7 +237,6 @@ img {
   margin: 0 auto;
   padding-top: 20px;
   padding-bottom: 20px;
-  outline: 2px dotted green;
   background-color: #283645; }
 
 .download__text {
@@ -260,7 +259,6 @@ img {
   margin-right: 20px;
   font-size: 0;
   position: relative;
-  outline: 1px dotted red;
   width: 55px;
   height: 55px; }
   .download__app-item::before {
@@ -328,7 +326,6 @@ img {
 .features__inner {
   width: 320px;
   margin: 0 auto;
-  outline: 2px dashed blue;
   padding-top: 65px;
   max-height: 740px; }
 
@@ -338,7 +335,6 @@ img {
   list-style: none; }
 
 .features__item {
-  outline: 2px dashed greenyellow;
   margin-bottom: 30px; }
 
 .features__name {
@@ -381,9 +377,6 @@ img {
 .reviews__before, .reviews__next {
   display: none; }
 
-.reviews__item {
-  outline: 2px dashed crimson; }
-
 .reviews__item:nth-child(n+2) {
   display: none; }
 
@@ -425,7 +418,6 @@ img {
   vertical-align: top;
   display: inline-block;
   margin-right: 18px;
-  outline: 1px dotted red;
   width: 5px;
   height: 5px; }
   .pagination__item:nth-child(3) {
@@ -452,8 +444,7 @@ img {
 
 .pagination__inner {
   margin: 0 auto;
-  width: 75px;
-  outline: 2px dashed darkblue; }
+  width: 75px; }
 
 .rates {
   width: 320px;
@@ -462,7 +453,6 @@ img {
   margin-top: 30px; }
 
 .rates__inner {
-  outline: 2px dashed green;
   padding-top: 60px;
   padding-bottom: 45px; }
 
@@ -563,7 +553,6 @@ img {
   width: 320px;
   height: 200px;
   overflow: hidden;
-  outline: 2px dashed;
   display: block; }
 
 .location__marker {
@@ -588,8 +577,7 @@ img {
 
 .photos__item {
   padding: 0 20px;
-  margin-bottom: 35px;
-  outline: 2px dashed brown; }
+  margin-bottom: 35px; }
   .photos__item--wide {
     padding: 0; }
 
@@ -598,7 +586,6 @@ img {
   margin: 0 auto;
   padding-top: 17px;
   margin-top: -5px;
-  outline: 2px dashed #d22856;
   background-color: rgba(0, 0, 0, 0.1); }
 
 .photos__author-stat {
@@ -647,7 +634,6 @@ img {
     content: "";
     width: 17px;
     height: 17px;
-    outline: 1px dotted orangered;
     background-image: url("/img/icon-heart.svg");
     background-repeat: no-repeat;
     background-position: center center; }
@@ -694,7 +680,6 @@ img {
     content: "";
     width: 48px;
     height: 48px;
-    outline: 2px dashed olivedrab;
     top: 0;
     left: 0; }
   .filter__type-item--crop::before {
@@ -1222,7 +1207,6 @@ img {
     -ms-flex-direction: row;
     flex-direction: row;
     padding-bottom: 23px;
-    outline: 2px dashed yellow;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: center -115px; }
   .intro__inner img{
@@ -1307,7 +1291,6 @@ img {
     font-size: 40px;
     line-height: 40px; }
   .promo-heading__text--photo{
-    outline: 1px dotted orange;
     margin-top: 40px;
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 18px;
@@ -1546,7 +1529,6 @@ img {
     flex-direction: row;
     padding-bottom: 25px; }
   .upload__preview{
-    outline: 2px dashed greenyellow;
     margin-top: 55px;
     width: 300px;
     margin-left: 20px; }
@@ -1999,7 +1981,6 @@ img {
   .features__inner{
     width: 960px; }
   .features{
-    outline: 1px dotted black;
     width: 1200px;
     margin: 0 auto;
     margin-top: 130px; }
@@ -2100,7 +2081,6 @@ img {
     width: 1200px;
     margin: 0 auto;
     margin-top: 0;
-    outline: 2px dashed red;
     padding-bottom: 95px; }
   .effect__inner img{
     transform: scale(1.25); }
@@ -2141,8 +2121,7 @@ img {
   .rates{
     width: 1200px;
     padding-bottom: 95px;
-    margin: 0 auto;
-    outline: 2px dashed blueviolet; }
+    margin: 0 auto; }
   .rates__table{
     width: 940px;
     margin: 0 auto;
