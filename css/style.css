@@ -1706,7 +1706,7 @@ img {
     background-position: 18px 18px;
     fill: red; }
   .field-text--contacts .field-text__span--mail::after{
-    background-image: url("/img/icon-mail.svg");
+    background-image: url("../img/icon-mail.svg");
     background-repeat: no-repeat;
     background-size: 20px 20px;
     background-position: 18px 18px; }
