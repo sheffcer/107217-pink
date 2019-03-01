@@ -2,7 +2,7 @@
   margin: 0 auto;
   width: 240px;
   margin-top: 40px;
-  outline: 2px dashed brown;
+  //outline: 2px dashed brown;
   border: none;
 }
 
@@ -26,7 +26,7 @@
     content: "";
     width: 48px;
     height: 48px;
-    outline:  2px dashed olivedrab;
+    //outline:  2px dashed olivedrab;
     top:0;
     left: 0;
   }
@@ -34,21 +34,21 @@
   &--crop::before {
     top: -9px;
     left: -6px;
-    background-image: url("/img/icon-editor-crop.svg");
+    background-image: url("../img/icon-editor-crop.svg");
     background-repeat: no-repeat;
   }
 
   &--fill::before {
     top: -8px;
     left: -5px;
-    background-image: url("/img/icon-editor-fill.svg");
+    background-image: url("../img/icon-editor-fill.svg");
     background-repeat: no-repeat;
   }
 
   &--contrast::before {
     left: 2px;
     top: -2px;
-    background-image: url("/img/icon-editor-contrast.svg");
+    background-image: url("../img/icon-editor-contrast.svg");
     background-repeat: no-repeat;
   }
 }

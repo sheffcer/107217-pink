@@ -5,19 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Form</title>
   <!--<link rel="stylesheet" href="/css/style.css">-->
-  <link rel="stylesheet" href="/css/style.min.css">
-  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
 <?php include_once("img/symbols.svg"); ?>
 <header class="page-header">
   <div class="page-header__inner">
     <div class="logo  logo--header">
+      <a href="index.html">
       <picture class="logo__img">
         <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
         <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
         <img src="img/logo-pink-white-mobile.svg" alt="logo">
       </picture>
+      </a>
       <!--<img src="img/logo-pink-white-mobile.svg" alt="logo">-->
     </div>
     <nav class="main-nav main-nav--opened main-nav--nojs">
@@ -196,9 +198,9 @@
       оповестим вас.</p>
     <button class="btn btn--form  btn--modal">закрыть окно</button>
   </div>
-<script src="/js/main.js"></script>
-<script src="/js/picturefill.js"></script>
-<script src="/js/svg4everybody.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/picturefill.js"></script>
+<script src="js/svg4everybody.min.js"></script>
 <script>svg4everybody(); // run it now or whenever you are ready</script>
 </body>
 </html>

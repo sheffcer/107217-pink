@@ -9,7 +9,7 @@
 .photos__item {
   padding: 0 20px;
   margin-bottom: 35px;
-  outline: 2px dashed brown;
+  //outline: 2px dashed brown;
 
   &--wide {
     padding: 0;
@@ -21,7 +21,7 @@
   margin: 0 auto;
   padding-top: 17px;
   margin-top: -5px;
-  outline: 2px dashed #d22856;
+  //outline: 2px dashed #d22856;
   background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -80,7 +80,7 @@
     content: "";
     width: 17px;
     height: 17px;
-    outline: 1px dotted orangered;
+    //outline: 1px dotted orangered;
     background-image: url("/img/icon-heart.svg");
     background-repeat: no-repeat;
     background-position: center center;

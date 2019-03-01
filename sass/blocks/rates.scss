@@ -6,7 +6,7 @@
 
 .rates__inner {
   //padding: 90px 20px 100px;
-  outline: 2px dashed green;
+  //outline: 2px dashed green;
   padding-top: 60px;
   padding-bottom: 45px;
 }
@@ -73,7 +73,7 @@
   left: 60px;
   width: 33px;
   height: 24px;
-  background-image: url("/img/icon-yes.svg");
+  background-image: url("../img/icon-yes.svg");
   background-repeat: no-repeat;
   background-size: cover ;
 }
@@ -85,7 +85,7 @@
   left: 60px;
   width: 29px;
   height: 29px;
-  background: url("/img/icon-no.svg");
+  background: url("../img/icon-no.svg");
   background-repeat: no-repeat;
   background-size: cover ;
 }
@@ -131,11 +131,13 @@
   .rates__text--ok::before {
     top: 15px;
     left: -70px;
+    background-repeat: no-repeat;
   }
 
   .rates__text--no::before {
     top: 15px;
     left: -70px;
+    background-repeat: no-repeat;
   }
 
 }
@@ -185,7 +187,7 @@
     width: 1200px;
     padding-bottom: 95px;
     margin: 0 auto;
-    outline: 2px dashed blueviolet;
+    //outline: 2px dashed blueviolet;
   }
 
   .rates__table {
@@ -203,10 +205,12 @@
   .rates__text--ok::before {
     top: 18px;
     left: 102px;
+    background-repeat: no-repeat;
   }
 
   .rates__text--no::before {
     top: 18px;
     left: 102px;
+    background-repeat: no-repeat;
   }
 }
