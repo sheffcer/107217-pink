@@ -178,12 +178,12 @@ img {
   font-size: 0;
   border: none;
   cursor: pointer;
-  background: url("/img/icon-menu-cross.svg") no-repeat; }
+  background: url("../img/icon-menu-cross.svg") no-repeat; }
   .main-nav--opened .main-nav__toggle:hover {
-    background: url("/img/icon-menu-cross-hover.svg") no-repeat;
+    background: url("../img/icon-menu-cross-hover.svg") no-repeat;
     transition: 0.4s; }
   .main-nav--opened .main-nav__toggle:active {
-    background: url("/img/icon-menu-cross-hover.svg") no-repeat;
+    background: url("../img/icon-menu-cross-hover.svg") no-repeat;
     transition: 0.4s;
     opacity: 0.75; }
 
