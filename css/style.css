@@ -159,12 +159,12 @@ img {
   font-size: 0;
   border: none;
   cursor: pointer;
-  background: url("/img/icon-menu-burger.svg") no-repeat; }
+  background: url("../img/icon-menu-burger.svg") no-repeat; }
   .main-nav--closed .main-nav__toggle:hover {
-    background: url("/img/icon-menu-burger-hover.svg") no-repeat;
+    background: url("../img/icon-menu-burger-hover.svg") no-repeat;
     transition: 0.4s; }
   .main-nav--closed .main-nav__toggle:active {
-    background: url("/img/icon-menu-burger-hover.svg") no-repeat;
+    background: url("../img/icon-menu-burger-hover.svg") no-repeat;
     transition: 0.4s;
     opacity: 0.75; }
 
