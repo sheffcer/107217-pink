@@ -1,7 +1,10 @@
 
 @import "variables.scss";
+@import "functions.scss";
+@import "grid-mixins.scss";
 @import "mixins.scss";
 @import "global.scss";
+@import "blocks/promo";
 @import "fonts";
 @import "blocks/page-header.scss";
 @import "blocks/logo.scss";
