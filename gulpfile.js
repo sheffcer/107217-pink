@@ -192,6 +192,8 @@ gulp.task("build", function (fn) {
 });
 
 // Отправка в GH pages (ветку gh-pages репозитория)
+var ghPagesUrl = 'https://sheffcer.github.io/107217-pink/index.html';
+
 gulp.task('deploy', function() {
   console.log('---------- Публикация ./build/ на GH pages');
   console.log('---------- '+ ghPagesUrl);
@@ -210,3 +212,24 @@ function reload (done) {
 // if(lists.js.length) {
 //   gulp.watch(lists.js, ['watch:js']);
 // }
+
+var repoUrl = require('./package.json').repository.url.replace(/\.git$/g, '');
+// console.log(repoUrl);
+
+// Отправка в GH pages (ветку gh-pages репозитория)
+
+// gulp.task('deploy', function() {
+//   const ghPages = require('gulp-gh-pages');
+//   console.log('---------- Публикация содержимого ./build/ на GH pages');
+//   var ghPagesUrl;
+//   if (repoUrl) {
+//     var urlParts = repoUrl.split('/');
+//     if (urlParts[2] == 'github.com') {
+//       ghPagesUrl = 'http://' + urlParts[3] + '.github.io/' + urlParts[4] + '/';
+//     }
+//     console.log('---------- ' + ghPagesUrl);
+//
+//   }
+//   return gulp.src(dirs.buildPath + '**/*')
+//     .pipe(ghPages());
+// });

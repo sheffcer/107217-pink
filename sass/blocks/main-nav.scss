@@ -56,15 +56,15 @@
   font-size: 0;
   border: none;
   cursor: pointer;
-  background: url("/img/icon-menu-burger.svg") no-repeat;
+  background: url("../img/icon-menu-burger.svg") no-repeat;
 
   &:hover{
-    background: url("/img/icon-menu-burger-hover.svg") no-repeat;
+    background: url("../img/icon-menu-burger-hover.svg") no-repeat;
     transition: 0.4s;
   }
 
   &:active{
-    background: url("/img/icon-menu-burger-hover.svg") no-repeat;
+    background: url("../img/icon-menu-burger-hover.svg") no-repeat;
     transition: 0.4s;
     opacity: 0.75;
   }
@@ -81,15 +81,15 @@
   font-size: 0;
   border: none;
   cursor: pointer;
-  background: url("/img/icon-menu-cross.svg") no-repeat;
+  background: url("../img/icon-menu-cross.svg") no-repeat;
 
   &:hover {
-    background: url("/img/icon-menu-cross-hover.svg") no-repeat;
+    background: url("../img/icon-menu-cross-hover.svg") no-repeat;
     transition: 0.4s;
   }
 
   &:active {
-    background: url("/img/icon-menu-cross-hover.svg") no-repeat;
+    background: url("../img/icon-menu-cross-hover.svg") no-repeat;
     transition: 0.4s;
     opacity: 0.75;
   }

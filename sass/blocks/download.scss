@@ -50,7 +50,7 @@
   &--ios {
     width: 55px;
     height: 55px;
-    background: url("/img/logo-apple.svg");
+    background: url("../img/logo-apple.svg");
     background-repeat: no-repeat;
   }
 
@@ -59,7 +59,7 @@
     height: 54px;
     top: 10px;
     left: 4px;
-    background: url("/img/logo-android.svg");
+    background: url("../img/logo-android.svg");
     background-repeat: no-repeat;
   }
 
@@ -68,7 +68,7 @@
     height: 43px;
     top: 11px;
     left: 10px;
-    background: url("/img/logo-microsoft.svg");
+    background: url("../img/logo-microsoft.svg");
     background-repeat: no-repeat;
   }
 }
