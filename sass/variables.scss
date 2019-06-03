@@ -42,16 +42,16 @@ $screen-lg:                   992px;
 $screen-xl:                   1200px;
 $screen-xxl:                  1800px;
 
-$container-sm:                100%;
-$container-md:                100%;
-$container-lg:                $screen-lg - 30;
-$container-xl:                $screen-xl - 30;
-$container-xxl:               $screen-xxl - 30;
+$container-sm:                $screen-sm - 40;
+$container-md:                $screen-md - 40;
+$container-lg:                $screen-lg - 40;
+$container-xl:                $screen-xl - 40;
+$container-xxl:               $screen-xxl - 40;
 
 // Модульная сетка
 
 $grid-columns:                12;
-$grid-gutter-width:           rem(30px);
+$grid-gutter-width:           40px;
 
 
 // Разное
